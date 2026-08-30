@@ -153,7 +153,7 @@
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="SMG &amp; Sword (M. Sharp)" hidden="false" id="924a-e957-be50-2f6b" sortIndex="5">
               <costs>
-                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="5"/>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="8"/>
               </costs>
               <infoLinks>
                 <infoLink name="SMG" id="d52f-a8d6-f92f-36c5" hidden="false" type="profile" targetId="101b-855e-8dc9-58d8"/>
