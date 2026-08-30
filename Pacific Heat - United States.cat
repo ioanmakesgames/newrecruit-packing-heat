@@ -1,0 +1,969 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="34df-9d6f-aa4c-ab23" name="Pacific Heat - United States" gameSystemId="sys-b77d-188a-67ba-264e" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="WW2 - Shared Data" id="cf10-40df-6a42-37ce" targetId="f8b3-af32-e87b-94d1"/>
+  </catalogueLinks>
+  <selectionEntries>
+    <selectionEntry type="unit" import="true" name="Ranger Gunner" hidden="false" id="fd87-02e3-12ac-33c9">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" id="c1c3-4545-0e53-4d52" hidden="false" defaultSelectionEntryId="bd4a-207c-c207-9a10" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="BAR" hidden="false" id="8821-474e-09bc-437f" sortIndex="1">
+              <infoLinks>
+                <infoLink name="BAR" id="2e28-c13f-6bf5-fccc" hidden="false" type="profile" targetId="8b15-4729-b8b9-1022"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Machine Gun" hidden="false" id="4fda-4c3f-57fa-5a99" sortIndex="4">
+              <infoLinks>
+                <infoLink name="SMG" id="2bbd-4b06-8914-e37f" hidden="false" type="profile" targetId="101b-855e-8dc9-58d8"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="3"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="791f-8b9c-bf93-07f2" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95a5-5ad8-6853-f7fa" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink name="Squad Member" hidden="false" id="e5cb-1d8a-7039-d5ad" targetId="default-category" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="16"/>
+      </costs>
+      <infoGroups>
+        <infoGroup name="Ranger Gunner" id="ced5-f87f-f6f0-8f66" hidden="false">
+          <profiles>
+            <profile name="Ranger Gunner" typeId="04df-5fa9-e39a-f453" typeName="Model" hidden="false" id="37b1-db37-2cb7-302d">
+              <characteristics>
+                <characteristic name="Guts" typeId="15b8-ab2b-d141-cc00">2</characteristic>
+                <characteristic name="Fight" typeId="cefd-16c0-2007-6682">8</characteristic>
+                <characteristic name="Rank" typeId="ed4c-41eb-3711-b441">3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Fast" id="b4da-97cc-2cdf-ce05" hidden="false" type="rule" targetId="adcf-b357-c16f-e6ca"/>
+            <infoLink name="Jungle Fighter" id="f61c-97dc-4712-ade3" hidden="false" type="rule" targetId="9d03-ef66-c9a8-e7c9"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <entryLinks>
+        <entryLink import="true" name="Make this model your Squad&apos;s Leader?" hidden="false" id="870b-0d24-efab-5eb5" type="selectionEntryGroup" targetId="b421-2c12-2cb8-3136" sortIndex="1"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="f87a-95c9-f56c-4afb" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="1847-75fe-ff08-9014" shared="true" includeChildSelections="true" childName="Squad Leader"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <comment>Gunner</comment>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="1e02-64b2-32de-500e" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ranger Sergeant" hidden="false" id="c442-2881-d75b-758c">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" id="b52a-49a2-1cd1-c346" hidden="false" defaultSelectionEntryId="6265-3b42-c0cc-4258">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Bayoneted Rifle" hidden="false" id="ef64-e0a3-5997-5e33" sortIndex="5">
+              <infoLinks>
+                <infoLink name="Bayoneted Rifle" id="6e97-0481-764f-18b8" hidden="false" type="profile" targetId="24e5-3330-7a9e-0d1c"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Pistol &amp; Knife (S. Sharp)" hidden="false" id="ce67-134b-4ab9-898e" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Precision" id="c7e4-79b9-78a4-d3f4" hidden="false" type="rule" targetId="9ec5-c80d-4ecb-ab9e"/>
+                <infoLink name="Pistol" id="4eb9-2bf3-1fec-b823" hidden="false" type="profile" targetId="06af-2bab-68b5-d044"/>
+              </infoLinks>
+              <profiles>
+                <profile name="Knife" typeId="2998-c971-9651-028c" typeName="Melee Weapon" hidden="false" id="1ecd-743f-9838-e51d">
+                  <characteristics>
+                    <characteristic name="Size" typeId="3459-c6d7-7eb8-601c">Small (+2)</characteristic>
+                    <characteristic name="Type" typeId="a97e-faea-6f11-8ced">Sharp</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Semi-Automatic Rifle" hidden="false" id="b2d2-1841-e2c8-9625" sortIndex="4">
+              <infoLinks>
+                <infoLink name="Semi-Automatic Rifle" id="7aaa-0271-7e5e-dd2d" hidden="false" type="profile" targetId="9be1-5182-f2ab-1268"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="1"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Attach a Grenade Launcher? (One per Squad)" hidden="false" id="bf85-303d-bd9f-5327" type="selectionEntryGroup" targetId="3cff-a828-3423-bef6"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bayoneted Semi-Automatic Rifle" hidden="false" id="9273-7c2a-cb9a-7977" sortIndex="6">
+              <infoLinks>
+                <infoLink name="Bayoneted Semi-Automatic Rifle" id="288a-b53c-891a-580c" hidden="false" type="profile" targetId="7c11-6008-f5ad-3878"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="3"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="SMG" hidden="false" id="8861-44d6-1a6d-c602" sortIndex="7">
+              <infoLinks>
+                <infoLink name="SMG" id="9345-529e-5c79-b61b" hidden="false" type="profile" targetId="101b-855e-8dc9-58d8"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="3"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Carbine" hidden="false" id="9dca-7060-eab4-5774" sortIndex="3">
+              <infoLinks>
+                <infoLink name="Carbine" id="5718-80c4-ca1b-3de6" hidden="false" type="profile" targetId="12a2-f44c-61c0-cff7"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rifle" hidden="false" id="d31c-1722-bd0e-d222" sortIndex="2">
+              <infoLinks>
+                <infoLink name="Rifle" id="86a9-7339-43e8-be8d" hidden="false" type="profile" targetId="2234-ed93-5d33-9163"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Attach a Grenade Launcher? (One per Squad)" hidden="false" id="4e0f-a2d9-e368-7437" type="selectionEntryGroup" targetId="3cff-a828-3423-bef6"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="9265-85e8-abb6-d502" sortIndex="8">
+              <infoLinks>
+                <infoLink name="Shotgun" id="5300-dfc2-b3e7-6270" hidden="false" type="profile" targetId="e240-2c14-a0c4-059b"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="3"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a619-020f-2772-3415" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bcd0-f252-d40e-66b7" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink name="Squad Leader" hidden="false" id="e563-193e-0c41-d213" targetId="f87a-95c9-f56c-4afb" primary="true"/>
+        <categoryLink name="Squad Member" hidden="false" id="3416-7113-cf2c-8264" targetId="default-category" primary="false"/>
+      </categoryLinks>
+      <comment>Leader</comment>
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="16"/>
+      </costs>
+      <infoGroups>
+        <infoGroup name="Ranger Sergeant" id="1930-92d8-adf8-1343" hidden="false">
+          <infoLinks>
+            <infoLink name="Fast" id="5fea-aa66-a3e9-97a9" hidden="false" type="rule" targetId="adcf-b357-c16f-e6ca"/>
+            <infoLink name="Command" id="d411-486d-315b-aa8f" hidden="false" type="rule" targetId="ad2b-0992-8f47-87c6"/>
+            <infoLink name="Jungle Fighter" id="b680-78cb-1f82-ae27" hidden="false" type="rule" targetId="9d03-ef66-c9a8-e7c9"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Ranger Sergeant" typeId="04df-5fa9-e39a-f453" typeName="Model" hidden="false" id="bb98-93d3-c808-a9a5">
+              <characteristics>
+                <characteristic name="Guts" typeId="15b8-ab2b-d141-cc00">3</characteristic>
+                <characteristic name="Fight" typeId="cefd-16c0-2007-6682">8</characteristic>
+                <characteristic name="Rank" typeId="ed4c-41eb-3711-b441">6</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ranger" hidden="false" id="20eb-4a05-01f4-2add">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" id="2803-bf46-c06f-da6e" hidden="false" defaultSelectionEntryId="bd4a-207c-c207-9a10" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Carbine" hidden="false" id="4b3f-9747-a4d4-ed04" sortIndex="2">
+              <infoLinks>
+                <infoLink name="Carbine" id="faf5-e85f-654f-015a" hidden="false" type="profile" targetId="12a2-f44c-61c0-cff7"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Semi-Automatic Rifle" hidden="false" id="fe3b-3d6d-54f3-de35" sortIndex="3">
+              <infoLinks>
+                <infoLink name="Semi-Automatic Rifle" id="9756-8b72-5dd4-73b4" hidden="false" type="profile" targetId="9be1-5182-f2ab-1268"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="1"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Attach a Grenade Launcher? (One per Squad)" hidden="false" id="bae6-49a1-2bc6-a0a7" type="selectionEntryGroup" targetId="3cff-a828-3423-bef6"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bayoneted Semi-Automatic Rifle" hidden="false" id="6a1d-4a64-b680-c552" sortIndex="5">
+              <infoLinks>
+                <infoLink name="Bayoneted Semi-Automatic Rifle" id="bd7a-fa8d-7d3f-d831" hidden="false" type="profile" targetId="7c11-6008-f5ad-3878"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="3"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="SMG" hidden="false" id="f38b-dc42-82e0-0e7b" sortIndex="6">
+              <infoLinks>
+                <infoLink name="SMG" id="07b2-af00-9ce0-5337" hidden="false" type="profile" targetId="101b-855e-8dc9-58d8"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="3"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rifle" hidden="false" id="e9a6-45f3-8c74-2293" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Rifle" id="2b65-cf62-0f8a-6123" hidden="false" type="profile" targetId="2234-ed93-5d33-9163"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Attach a Grenade Launcher? (One per Squad)" hidden="false" id="f3bf-5017-250d-637a" type="selectionEntryGroup" targetId="3cff-a828-3423-bef6"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bayoneted Rifle" hidden="false" id="d5ea-8d52-47fb-4137" sortIndex="4">
+              <infoLinks>
+                <infoLink name="Bayoneted Rifle" id="9616-6216-6f34-efc3" hidden="false" type="profile" targetId="24e5-3330-7a9e-0d1c"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="7523-efd6-d497-f4e4" sortIndex="7">
+              <infoLinks>
+                <infoLink name="Shotgun" id="e7f8-31b5-ba7b-2ccb" hidden="false" type="profile" targetId="e240-2c14-a0c4-059b"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="3"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0d9b-985c-3fd8-08ed" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a698-430b-6e5f-003f" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Grenades" id="c215-da18-5495-a0b2" hidden="false" sortIndex="3">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Smoke Grenade" hidden="false" id="b5d6-a567-2b04-851b">
+              <infoLinks>
+                <infoLink name="Smoke Grenade" id="cda2-7dae-30a8-aa9b" hidden="false" type="profile" targetId="929a-2d8e-4496-a724"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e3c-e600-6b77-0c76" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Frag Grenade" hidden="false" id="5109-9d5f-98eb-021f">
+              <infoLinks>
+                <infoLink name="Frag Grenade" id="cc0a-864b-b0e4-5053" hidden="false" type="profile" targetId="fcf1-d029-c596-e785"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="18c1-df80-d974-5557" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Up to 3 Marines per Squad can become..." id="15a6-9ac7-d32b-fff5" hidden="false" sortIndex="4">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ammo Carrier" hidden="false" id="32cc-d2d4-2818-0e64">
+              <infoLinks>
+                <infoLink name="Ammo Carrier" id="a75e-db39-8b41-c0b8" hidden="false" type="rule" targetId="a66f-ebf6-49a8-c129"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eece-7278-1706-255d" includeChildSelections="false"/>
+                <constraint type="max" value="3" field="selections" scope="force" shared="true" id="689b-48c8-9b47-c099" includeChildSelections="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink name="Squad Member" hidden="false" id="923e-8a12-5bff-89e5" targetId="default-category" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="10"/>
+      </costs>
+      <infoGroups>
+        <infoGroup name="Ranger" id="e54a-41fd-d98a-2e50" hidden="false">
+          <profiles>
+            <profile name="Ranger" typeId="04df-5fa9-e39a-f453" typeName="Model" hidden="false" id="f1fe-2076-2797-6531">
+              <characteristics>
+                <characteristic name="Guts" typeId="15b8-ab2b-d141-cc00">2</characteristic>
+                <characteristic name="Fight" typeId="cefd-16c0-2007-6682">8</characteristic>
+                <characteristic name="Rank" typeId="ed4c-41eb-3711-b441">3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Fast" id="31c5-461e-da27-147c" hidden="false" type="rule" targetId="adcf-b357-c16f-e6ca"/>
+            <infoLink name="Jungle Fighter" id="6c91-98aa-d4e1-5c20" hidden="false" type="rule" targetId="9d03-ef66-c9a8-e7c9"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <entryLinks>
+        <entryLink import="true" name="Make this model your Squad&apos;s Leader?" hidden="false" id="f795-b763-7a19-b910" type="selectionEntryGroup" targetId="b421-2c12-2cb8-3136" sortIndex="1"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="f87a-95c9-f56c-4afb" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="1847-75fe-ff08-9014" shared="true" includeChildSelections="true" childName="Squad Leader"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Corporal" hidden="false" id="b71a-77f8-65b3-9a41">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" id="f0de-4f96-f3cc-13ea" hidden="false" defaultSelectionEntryId="6265-3b42-c0cc-4258">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Carbine" hidden="false" id="f498-c764-52b1-ada0" sortIndex="2">
+              <infoLinks>
+                <infoLink name="Carbine" id="e26a-32f9-a62d-74c6" hidden="false" type="profile" targetId="12a2-f44c-61c0-cff7"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Pistol &amp; Knife (S. Sharp)" hidden="false" id="fb95-2183-609c-d40d" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Precision" id="f0fb-66d2-acce-1e4d" hidden="false" type="rule" targetId="9ec5-c80d-4ecb-ab9e"/>
+                <infoLink name="Pistol" id="330b-9bd6-72fe-77ac" hidden="false" type="profile" targetId="06af-2bab-68b5-d044"/>
+              </infoLinks>
+              <profiles>
+                <profile name="Knife" typeId="2998-c971-9651-028c" typeName="Melee Weapon" hidden="false" id="0593-5537-7725-64f8">
+                  <characteristics>
+                    <characteristic name="Size" typeId="3459-c6d7-7eb8-601c">Small (+2)</characteristic>
+                    <characteristic name="Type" typeId="a97e-faea-6f11-8ced">Sharp</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Semi-Automatic Rifle" hidden="false" id="ebbf-561e-aea8-dc85" sortIndex="3">
+              <infoLinks>
+                <infoLink name="Semi-Automatic Rifle" id="f567-bde5-3f4a-d92d" hidden="false" type="profile" targetId="9be1-5182-f2ab-1268"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="1"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Attach a Grenade Launcher? (One per Squad)" hidden="false" id="2958-9dc8-fa8e-e815" type="selectionEntryGroup" targetId="3cff-a828-3423-bef6"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bayoneted Semi-Automatic Rifle" hidden="false" id="3e65-6d2b-4464-8fc2" sortIndex="4">
+              <infoLinks>
+                <infoLink name="Bayoneted Semi-Automatic Rifle" id="2533-e01c-091e-c04e" hidden="false" type="profile" targetId="7c11-6008-f5ad-3878"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="3"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="SMG" hidden="false" id="8d4b-1102-4f20-2ba7" sortIndex="5">
+              <infoLinks>
+                <infoLink name="SMG" id="7263-0351-d720-9beb" hidden="false" type="profile" targetId="101b-855e-8dc9-58d8"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="3"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="df0f-ed7e-6a46-cc1f" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6f32-e323-c7ce-51d1" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink name="Squad Leader" hidden="false" id="2e9f-7855-47c8-3854" targetId="f87a-95c9-f56c-4afb" primary="true"/>
+        <categoryLink name="Squad Member" hidden="false" id="37d5-956e-e0ef-7cbf" targetId="default-category" primary="false"/>
+      </categoryLinks>
+      <comment>Leader</comment>
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="14"/>
+      </costs>
+      <infoGroups>
+        <infoGroup name="Corporal" id="f327-2cdd-e6b4-7c72" hidden="false">
+          <infoLinks>
+            <infoLink name="Command" id="0e32-0225-aa90-302b" hidden="false" type="rule" targetId="ad2b-0992-8f47-87c6"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Corporal" typeId="04df-5fa9-e39a-f453" typeName="Model" hidden="false" id="42d6-9a23-4679-5127">
+              <characteristics>
+                <characteristic name="Guts" typeId="15b8-ab2b-d141-cc00">3</characteristic>
+                <characteristic name="Fight" typeId="cefd-16c0-2007-6682">8</characteristic>
+                <characteristic name="Rank" typeId="ed4c-41eb-3711-b441">5</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Private" hidden="false" id="43c4-d789-1958-87c3">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" id="142e-3cb3-97c7-106a" hidden="false" defaultSelectionEntryId="bd4a-207c-c207-9a10" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Carbine" hidden="false" id="dd6e-04cf-22ed-8451" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Carbine" id="fb95-fe55-056f-c548" hidden="false" type="profile" targetId="12a2-f44c-61c0-cff7"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Semi-Automatic Rifle" hidden="false" id="b8bf-1185-b9c1-aa5e" sortIndex="3">
+              <infoLinks>
+                <infoLink name="Semi-Automatic Rifle" id="54d1-0ec1-78f6-ccdf" hidden="false" type="profile" targetId="9be1-5182-f2ab-1268"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="1"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Attach a Grenade Launcher? (One per Squad)" hidden="false" id="cdbf-c0c5-9275-a48c" type="selectionEntryGroup" targetId="3cff-a828-3423-bef6"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bayoneted Semi-Automatic Rifle" hidden="false" id="9d2e-046d-694f-86e6" sortIndex="4">
+              <infoLinks>
+                <infoLink name="Bayoneted Semi-Automatic Rifle" id="3278-e7ef-e799-3d70" hidden="false" type="profile" targetId="7c11-6008-f5ad-3878"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="3"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="SMG" hidden="false" id="d00c-84c4-34db-a4d3" sortIndex="4">
+              <infoLinks>
+                <infoLink name="SMG" id="2ea0-09d2-fb52-de27" hidden="false" type="profile" targetId="101b-855e-8dc9-58d8"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="3"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d739-8ee1-d121-c54c" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="02a9-db3c-ff92-d704" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Grenades" id="ed9b-237c-32fa-3cce" hidden="false" sortIndex="3">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Smoke Grenade" hidden="false" id="97e1-cd55-a46b-1f57">
+              <infoLinks>
+                <infoLink name="Smoke Grenade" id="779f-f953-50f7-7635" hidden="false" type="profile" targetId="929a-2d8e-4496-a724"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d218-716d-5947-6e33" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Frag Grenade" hidden="false" id="6bd5-e99e-fd68-b432">
+              <infoLinks>
+                <infoLink name="Frag Grenade" id="117b-c3ce-06a7-bb92" hidden="false" type="profile" targetId="fcf1-d029-c596-e785"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="79ba-71be-f9e4-5401" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Up to 3 Privates per Squad can become..." id="e36b-4f7b-524f-8a3e" hidden="false" sortIndex="4">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ammo Carrier" hidden="false" id="1440-3b40-d4bb-84d1">
+              <infoLinks>
+                <infoLink name="Ammo Carrier" id="bb88-b323-aa66-46c5" hidden="false" type="rule" targetId="a66f-ebf6-49a8-c129"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b364-bac2-cc7b-9cf4" includeChildSelections="false"/>
+                <constraint type="max" value="3" field="selections" scope="force" shared="true" id="146c-6445-6abd-90a8" includeChildSelections="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink name="Squad Member" hidden="false" id="cdfc-b7cc-d40d-15d1" targetId="default-category" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="8"/>
+      </costs>
+      <infoGroups>
+        <infoGroup name="Private" id="86d5-f523-b371-865e" hidden="false">
+          <profiles>
+            <profile name="Private" typeId="04df-5fa9-e39a-f453" typeName="Model" hidden="false" id="3067-d027-87bf-e110">
+              <characteristics>
+                <characteristic name="Guts" typeId="15b8-ab2b-d141-cc00">2</characteristic>
+                <characteristic name="Fight" typeId="cefd-16c0-2007-6682">8</characteristic>
+                <characteristic name="Rank" typeId="ed4c-41eb-3711-b441">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <entryLinks>
+        <entryLink import="true" name="Make this model your Squad&apos;s Leader?" hidden="false" id="78f1-3691-11fa-cb08" type="selectionEntryGroup" targetId="b421-2c12-2cb8-3136" sortIndex="1"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="f87a-95c9-f56c-4afb" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="1847-75fe-ff08-9014" shared="true" includeChildSelections="true" childName="Squad Leader"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Private Gunner" hidden="false" id="6c6a-dac6-6980-712d">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" id="1ce3-412c-752e-6474" hidden="false" defaultSelectionEntryId="bd4a-207c-c207-9a10" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="BAR" hidden="false" id="0c7f-a28b-6c88-e045" sortIndex="1">
+              <infoLinks>
+                <infoLink name="BAR" id="3256-6ccb-c34d-7894" hidden="false" type="profile" targetId="8b15-4729-b8b9-1022"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Machine Gun" hidden="false" id="945b-aee7-5535-15f1" sortIndex="4">
+              <infoLinks>
+                <infoLink name="SMG" id="3206-a0fb-e0e0-80c9" hidden="false" type="profile" targetId="101b-855e-8dc9-58d8"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="3"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7b83-a974-05ab-a59a" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0b7e-4664-ba69-e597" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink name="Squad Member" hidden="false" id="81d4-b7ba-1499-bac6" targetId="default-category" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="14"/>
+      </costs>
+      <infoGroups>
+        <infoGroup name="Private Gunner" id="2ffd-329e-e0ee-156b" hidden="false">
+          <profiles>
+            <profile name="Private Gunner" typeId="04df-5fa9-e39a-f453" typeName="Model" hidden="false" id="fd40-2230-6f41-3507">
+              <characteristics>
+                <characteristic name="Guts" typeId="15b8-ab2b-d141-cc00">2</characteristic>
+                <characteristic name="Fight" typeId="cefd-16c0-2007-6682">8</characteristic>
+                <characteristic name="Rank" typeId="ed4c-41eb-3711-b441">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <entryLinks>
+        <entryLink import="true" name="Make this model your Squad&apos;s Leader?" hidden="false" id="aae0-a083-1894-e9d4" type="selectionEntryGroup" targetId="b421-2c12-2cb8-3136" sortIndex="1"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="f87a-95c9-f56c-4afb" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="1847-75fe-ff08-9014" shared="true" includeChildSelections="true" childName="Squad Leader"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <comment>Gunner</comment>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="2f60-859f-a982-4364" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Marine Corporal" hidden="false" id="fe87-3481-48fb-434b">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" id="e09f-ae2b-eb8a-be65" hidden="false" defaultSelectionEntryId="6265-3b42-c0cc-4258">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Bayoneted Rifle" hidden="false" id="8e60-5210-23cd-d142" sortIndex="5">
+              <infoLinks>
+                <infoLink name="Bayoneted Rifle" id="7fbd-8bda-ac05-6729" hidden="false" type="profile" targetId="24e5-3330-7a9e-0d1c"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Pistol &amp; Knife (S. Sharp)" hidden="false" id="af09-0a2b-3d2e-4c6c" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Precision" id="dafb-3617-e3b2-465a" hidden="false" type="rule" targetId="9ec5-c80d-4ecb-ab9e"/>
+                <infoLink name="Pistol" id="72f4-2e14-94b9-be7b" hidden="false" type="profile" targetId="06af-2bab-68b5-d044"/>
+              </infoLinks>
+              <profiles>
+                <profile name="Knife" typeId="2998-c971-9651-028c" typeName="Melee Weapon" hidden="false" id="dc8a-e685-a3b3-f151">
+                  <characteristics>
+                    <characteristic name="Size" typeId="3459-c6d7-7eb8-601c">Small (+2)</characteristic>
+                    <characteristic name="Type" typeId="a97e-faea-6f11-8ced">Sharp</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Semi-Automatic Rifle" hidden="false" id="b397-1dec-f9ff-ee89" sortIndex="4">
+              <infoLinks>
+                <infoLink name="Semi-Automatic Rifle" id="83e2-287c-13f8-b279" hidden="false" type="profile" targetId="9be1-5182-f2ab-1268"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="1"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Attach a Grenade Launcher? (One per Squad)" hidden="false" id="7758-cbab-e1ce-24ec" type="selectionEntryGroup" targetId="3cff-a828-3423-bef6"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bayoneted Semi-Automatic Rifle" hidden="false" id="7f7d-cdca-c883-70fe" sortIndex="6">
+              <infoLinks>
+                <infoLink name="Bayoneted Semi-Automatic Rifle" id="407c-1009-6da4-8f95" hidden="false" type="profile" targetId="7c11-6008-f5ad-3878"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="3"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="SMG" hidden="false" id="b332-94cf-a068-4344" sortIndex="7">
+              <infoLinks>
+                <infoLink name="SMG" id="a386-4dcc-3e06-6c80" hidden="false" type="profile" targetId="101b-855e-8dc9-58d8"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="3"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Carbine" hidden="false" id="eb51-b578-9aa1-fcb9" sortIndex="3">
+              <infoLinks>
+                <infoLink name="Carbine" id="58f5-8f0f-ef7f-8cf2" hidden="false" type="profile" targetId="12a2-f44c-61c0-cff7"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rifle" hidden="false" id="a1a4-8558-aaa2-9794" sortIndex="2">
+              <infoLinks>
+                <infoLink name="Rifle" id="8323-a0d2-4b69-34a5" hidden="false" type="profile" targetId="2234-ed93-5d33-9163"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Attach a Grenade Launcher? (One per Squad)" hidden="false" id="442b-aab9-094c-2791" type="selectionEntryGroup" targetId="3cff-a828-3423-bef6"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="0c77-bf0d-47b8-c9fc" sortIndex="8">
+              <infoLinks>
+                <infoLink name="Shotgun" id="8ede-fe27-d038-10ee" hidden="false" type="profile" targetId="e240-2c14-a0c4-059b"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="3"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ea0f-579c-b106-33fd" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="17b2-8a63-378d-04d1" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink name="Squad Leader" hidden="false" id="3e80-6a5a-e2e0-7455" targetId="f87a-95c9-f56c-4afb" primary="true"/>
+        <categoryLink name="Squad Member" hidden="false" id="b29d-fb61-9ed8-c349" targetId="default-category" primary="false"/>
+      </categoryLinks>
+      <comment>Leader</comment>
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="16"/>
+      </costs>
+      <infoGroups>
+        <infoGroup name="Marine Corporal" id="3b97-e649-5431-c1d7" hidden="false">
+          <infoLinks>
+            <infoLink name="Fast" id="0fd3-f69c-d4b4-64e1" hidden="false" type="rule" targetId="adcf-b357-c16f-e6ca"/>
+            <infoLink name="Command" id="4c0e-86fb-2d91-f659" hidden="false" type="rule" targetId="ad2b-0992-8f47-87c6"/>
+            <infoLink name="Scout" id="ae93-d1ff-7ffe-0bb9" hidden="false" type="rule" targetId="729a-3d54-3f72-0fd5"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Marine Corporal" typeId="04df-5fa9-e39a-f453" typeName="Model" hidden="false" id="8bc5-d77f-03f3-a50d">
+              <characteristics>
+                <characteristic name="Guts" typeId="15b8-ab2b-d141-cc00">3</characteristic>
+                <characteristic name="Fight" typeId="cefd-16c0-2007-6682">8</characteristic>
+                <characteristic name="Rank" typeId="ed4c-41eb-3711-b441">6</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Marine Gunner" hidden="false" id="3b1b-c1b1-1d77-c359">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" id="63c0-f386-21a7-7bee" hidden="false" defaultSelectionEntryId="bd4a-207c-c207-9a10" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="BAR" hidden="false" id="b377-4880-02cc-0f04" sortIndex="1">
+              <infoLinks>
+                <infoLink name="BAR" id="3b7a-0d5c-4d43-0897" hidden="false" type="profile" targetId="8b15-4729-b8b9-1022"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Machine Gun" hidden="false" id="b305-1ef3-bc89-f784" sortIndex="4">
+              <infoLinks>
+                <infoLink name="SMG" id="6826-0318-d82a-c2ee" hidden="false" type="profile" targetId="101b-855e-8dc9-58d8"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="3"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0698-eee8-aaf1-8afd" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c395-a730-6a3e-64ea" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink name="Squad Member" hidden="false" id="6b67-3d90-b7ee-7647" targetId="default-category" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="16"/>
+      </costs>
+      <infoGroups>
+        <infoGroup name="Marine Gunner" id="7344-2026-6aca-2b9b" hidden="false">
+          <profiles>
+            <profile name="Marine Gunner" typeId="04df-5fa9-e39a-f453" typeName="Model" hidden="false" id="27f8-4809-3781-4b0d">
+              <characteristics>
+                <characteristic name="Guts" typeId="15b8-ab2b-d141-cc00">2</characteristic>
+                <characteristic name="Fight" typeId="cefd-16c0-2007-6682">8</characteristic>
+                <characteristic name="Rank" typeId="ed4c-41eb-3711-b441">3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Fast" id="6b50-e51d-380a-00f9" hidden="false" type="rule" targetId="adcf-b357-c16f-e6ca"/>
+            <infoLink name="Scout" id="8fe9-2b75-bd1d-3da7" hidden="false" type="rule" targetId="729a-3d54-3f72-0fd5"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <entryLinks>
+        <entryLink import="true" name="Make this model your Squad&apos;s Leader?" hidden="false" id="096a-520c-5ca7-af03" type="selectionEntryGroup" targetId="b421-2c12-2cb8-3136" sortIndex="1"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="f87a-95c9-f56c-4afb" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="1847-75fe-ff08-9014" shared="true" includeChildSelections="true" childName="Squad Leader"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <comment>Gunner</comment>
+      <constraints>
+        <constraint type="max" value="3" field="selections" scope="force" shared="true" id="7788-14a3-7824-413d" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Marine" hidden="false" id="c975-1aa7-5426-25ce">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" id="61bf-52a1-6b10-ee24" hidden="false" defaultSelectionEntryId="bd4a-207c-c207-9a10" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Carbine" hidden="false" id="ad13-7fbd-b671-8dfe" sortIndex="2">
+              <infoLinks>
+                <infoLink name="Carbine" id="03b8-0680-cef5-d652" hidden="false" type="profile" targetId="12a2-f44c-61c0-cff7"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Semi-Automatic Rifle" hidden="false" id="fcf6-fd18-2540-6af5" sortIndex="3">
+              <infoLinks>
+                <infoLink name="Semi-Automatic Rifle" id="fc6d-907c-968f-b496" hidden="false" type="profile" targetId="9be1-5182-f2ab-1268"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="1"/>
+              </costs>
+              <entryLinks>
+                <entryLink import="true" name="Attach a Grenade Launcher? (One per Squad)" hidden="false" id="e402-9ebd-7e6d-ce6e" type="selectionEntryGroup" targetId="3cff-a828-3423-bef6"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bayoneted Semi-Automatic Rifle" hidden="false" id="62a8-895a-b180-9e20" sortIndex="5">
+              <infoLinks>
+                <infoLink name="Bayoneted Semi-Automatic Rifle" id="3273-9b3f-6196-35d9" hidden="false" type="profile" targetId="7c11-6008-f5ad-3878"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="3"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="SMG" hidden="false" id="348d-170d-941f-3cde" sortIndex="6">
+              <infoLinks>
+                <infoLink name="SMG" id="dad5-9d74-0095-6a79" hidden="false" type="profile" targetId="101b-855e-8dc9-58d8"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="3"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rifle" hidden="false" id="edf8-9f4e-63de-5111" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Rifle" id="ae2b-ee54-2b80-f0b4" hidden="false" type="profile" targetId="2234-ed93-5d33-9163"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Attach a Grenade Launcher? (One per Squad)" hidden="false" id="7231-46d3-1a55-4948" type="selectionEntryGroup" targetId="3cff-a828-3423-bef6"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bayoneted Rifle" hidden="false" id="5391-6a95-380c-6014" sortIndex="4">
+              <infoLinks>
+                <infoLink name="Bayoneted Rifle" id="08f2-849e-9ec6-a291" hidden="false" type="profile" targetId="24e5-3330-7a9e-0d1c"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="a3a4-7afc-d39c-3b20" sortIndex="7">
+              <infoLinks>
+                <infoLink name="Shotgun" id="2517-16ce-cb08-cf0e" hidden="false" type="profile" targetId="e240-2c14-a0c4-059b"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="3"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9f8b-c255-a73e-97f8" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7e2-ed39-f2b1-f301" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Grenades" id="faab-1f9a-a41f-fb19" hidden="false" sortIndex="3">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Smoke Grenade" hidden="false" id="d9cb-f33d-5761-7dd1">
+              <infoLinks>
+                <infoLink name="Smoke Grenade" id="9aa3-3f7b-7778-ed26" hidden="false" type="profile" targetId="929a-2d8e-4496-a724"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e838-c2bd-c78f-32a3" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Frag Grenade" hidden="false" id="c864-dd92-9479-b729">
+              <infoLinks>
+                <infoLink name="Frag Grenade" id="be67-8c22-da91-0df1" hidden="false" type="profile" targetId="fcf1-d029-c596-e785"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be1c-9b29-707b-3903" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Up to 3 Marines per Squad can become..." id="1e92-531a-ffb7-0504" hidden="false" sortIndex="4">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ammo Carrier" hidden="false" id="b944-4820-3528-8c57">
+              <infoLinks>
+                <infoLink name="Ammo Carrier" id="a864-a647-a437-8d52" hidden="false" type="rule" targetId="a66f-ebf6-49a8-c129"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9935-2d31-8775-d33b" includeChildSelections="false"/>
+                <constraint type="max" value="3" field="selections" scope="force" shared="true" id="788f-8c9d-ea14-c227" includeChildSelections="true"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink name="Squad Member" hidden="false" id="49eb-be50-1818-e231" targetId="default-category" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="10"/>
+      </costs>
+      <infoGroups>
+        <infoGroup name="Marine" id="9851-aecb-2326-2dee" hidden="false">
+          <profiles>
+            <profile name="Marine" typeId="04df-5fa9-e39a-f453" typeName="Model" hidden="false" id="0a6b-b170-f8a4-8c01">
+              <characteristics>
+                <characteristic name="Guts" typeId="15b8-ab2b-d141-cc00">2</characteristic>
+                <characteristic name="Fight" typeId="cefd-16c0-2007-6682">8</characteristic>
+                <characteristic name="Rank" typeId="ed4c-41eb-3711-b441">3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Fast" id="6e0e-7cd1-7dbb-f331" hidden="false" type="rule" targetId="adcf-b357-c16f-e6ca"/>
+            <infoLink name="Scout" id="8602-5970-8c5d-e3de" hidden="false" type="rule" targetId="729a-3d54-3f72-0fd5"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <entryLinks>
+        <entryLink import="true" name="Make this model your Squad&apos;s Leader?" hidden="false" id="b6bb-be36-8807-27fe" type="selectionEntryGroup" targetId="b421-2c12-2cb8-3136" sortIndex="1"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="f87a-95c9-f56c-4afb" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="1847-75fe-ff08-9014" shared="true" includeChildSelections="true" childName="Squad Leader"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="2½-Ton Truck" hidden="false" id="7629-1ae6-d65d-6979" subType="mount">
+      <categoryLinks>
+        <categoryLink name="Car" hidden="false" id="03f4-0a03-c97a-eb37" targetId="0b3f-1adb-3e32-5083" primary="true"/>
+        <categoryLink name="Squad Support" hidden="false" id="9354-3837-7715-5f56" targetId="185e-2a88-52c0-c937" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="28"/>
+      </costs>
+      <infoGroups>
+        <infoGroup name="2½-Ton Truck" id="6ec8-add8-90dd-3acd" hidden="false">
+          <profiles>
+            <profile name="2½-Ton Truck" typeId="0fbb-0f67-42fe-1016" typeName="Car" hidden="false" id="3686-7c9f-896d-85ff">
+              <characteristics>
+                <characteristic name="Structure" typeId="4368-4ffe-c146-7e53">+6</characteristic>
+                <characteristic name="Capacity" typeId="e5d5-6c09-e3fb-3d46">14</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="All-Terrain" id="b1b3-5de6-0842-179a" hidden="false" type="rule" targetId="6207-1fad-7576-bc6a"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" id="4413-c6ef-4423-b1c6" hidden="false" defaultSelectionEntryId="159f-fa7d-23b2-1bed">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b56d-b767-1a5f-61c8" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="87e3-b517-12f3-4122" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Unarmed" hidden="false" id="6f94-c040-4804-80a3" sortIndex="1"/>
+            <selectionEntry type="upgrade" import="true" name="Machine Gun" hidden="false" id="642f-e1cb-2850-ee66" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="15"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink name="Armed Car" hidden="false" id="6f0c-88e4-ba00-0205" targetId="1bdc-c0aa-6a2a-e64c" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Attach a Grenade Launcher? (One per Squad)" id="3cff-a828-3423-bef6" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Grenade Launcher" hidden="false" id="e904-22f6-8578-babb">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a129-f3fb-1c42-30c5" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="cc42-385e-f942-0ecc" includeChildSelections="true"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Grenade Launcher" id="2ba6-e5fb-9b83-be28" hidden="false" type="profile" targetId="2738-9586-a995-073b"/>
+          </infoLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Frag Grenade" hidden="false" id="7f4d-4155-02e5-3f5b">
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="d560-2113-82b6-1b0f-min" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d560-2113-82b6-1b0f-max" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Frag Grenade" id="e7f7-2413-90bf-6afc" hidden="false" type="profile" targetId="fcf1-d029-c596-e785"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="5"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <entryLinks>
+    <entryLink import="true" name="Medic" hidden="false" id="6e93-ecaa-d46f-76b3" type="selectionEntry" targetId="54ee-722b-6fa9-76c0"/>
+    <entryLink import="true" name="Sniper" hidden="false" id="b9da-d230-6b22-f5e5" type="selectionEntry" targetId="561c-7fbf-118c-97f6"/>
+    <entryLink import="true" name="Flamethrower" hidden="false" id="5cae-399c-31dd-a5c1" type="selectionEntry" targetId="736a-9e16-3de9-c06f"/>
+    <entryLink import="true" name="Willys Jeep" hidden="false" id="974b-1a00-0cae-b4cc" type="selectionEntry" targetId="a40e-398e-844d-ebc1"/>
+    <entryLink import="true" name="Off-Table Weapons Team" hidden="false" id="5fa9-4470-a3d6-e383" type="selectionEntry" targetId="ce8b-015d-e5ca-da8b"/>
+    <entryLink import="true" name="Landing Boat" hidden="false" id="1bd3-842d-d636-3802" type="selectionEntry" targetId="b2fc-c566-23d1-430f"/>
+  </entryLinks>
+</catalogue>

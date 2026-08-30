@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="true" id="1ac6-2f14-127b-da59" name="Modern Streets - Shared Data" gameSystemId="sys-b77d-188a-67ba-264e" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Hired Sniper" hidden="false" id="37cb-b1c5-1a59-4d51">
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="20"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Squad Member" hidden="false" id="07dd-1d4c-6c83-7737" targetId="default-category" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="fa8c-1f08-b9fb-3d86" includeChildSelections="false"/>
+      </constraints>
+      <infoGroups>
+        <infoGroup name="Hired Sniper" id="c105-a378-f98c-ba14" hidden="false">
+          <profiles>
+            <profile name="Hired Sniper" typeId="04df-5fa9-e39a-f453" typeName="Model" hidden="false" id="75fb-af9c-6478-c364">
+              <characteristics>
+                <characteristic name="Guts" typeId="15b8-ab2b-d141-cc00">2</characteristic>
+                <characteristic name="Fight" typeId="cefd-16c0-2007-6682">6</characteristic>
+                <characteristic name="Rank" typeId="ed4c-41eb-3711-b441">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Scout" id="9e98-647c-8951-d6e0" hidden="false" type="rule" targetId="0161-cb0e-9c20-9dc6"/>
+            <infoLink name="Accurate" id="fab0-1663-eab5-759f" hidden="false" type="rule" targetId="9620-a33d-bdd1-2f60"/>
+            <infoLink name="Loner" id="b848-8661-f239-aeae" hidden="false" type="rule" targetId="9d71-76fa-8d9f-21f1"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Sniper Rifle" hidden="false" id="65a6-3380-eedf-7a6e" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3ec3-00dc-3388-28c1" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b95-5160-7800-9a85" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Sniper Rifle" id="fde5-e802-db93-6143" hidden="false" type="profile" targetId="e500-9f0e-c9f5-0421"/>
+            <infoLink name="Focused Shot" id="508f-80f9-6dfe-50ca" hidden="false" type="rule" targetId="df40-1801-16d0-f3bc"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="4118-6b5b-c60a-a663" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5351-e106-b747-8855" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="413c-ca06-bebb-36b7" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Pistol" id="3362-a935-8b54-5943" hidden="false" type="profile" targetId="06af-2bab-68b5-d044"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Make this model your Squad&apos;s Leader?" hidden="false" id="a037-a8a8-dc68-96ec" type="selectionEntryGroup" targetId="b421-2c12-2cb8-3136" sortIndex="1"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="f87a-95c9-f56c-4afb" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="1847-75fe-ff08-9014" shared="true" includeChildSelections="true" childName="Squad Leader"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Racer&apos;s Car" hidden="false" id="feda-60b8-15e7-a57d" subType="mount">
+      <categoryLinks>
+        <categoryLink targetId="0b3f-1adb-3e32-5083" id="b256-448a-1686-c0d1" primary="true" name="Car"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Unarmed" hidden="false" id="7845-7de9-3ff3-ac04" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7755-1d1c-d526-8763-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7755-1d1c-d526-8763-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <infoGroups>
+        <infoGroup name="Racer&apos;s Car" id="9290-2330-68bb-a941" hidden="false">
+          <profiles>
+            <profile name="Racer&apos;s Car" typeId="0fbb-0f67-42fe-1016" typeName="Car" hidden="false" id="c795-686f-881c-465a">
+              <characteristics>
+                <characteristic name="Structure" typeId="4368-4ffe-c146-7e53">+4</characteristic>
+                <characteristic name="Capacity" typeId="e5d5-6c09-e3fb-3d46">4</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Turbo" id="9bc4-e5de-a02a-e40e" hidden="false" type="rule" targetId="687d-f944-f28d-1817"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="15"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Trunk" id="8b7e-d6b6-f29b-f29e" hidden="false" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ammo Cache" hidden="false" id="392b-d8b4-0aba-355d">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ae1-4026-8352-439d" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Ammo Cache" id="f555-b6f8-97fa-1ad5" hidden="false" type="profile" targetId="33e9-ae36-92c9-dae1"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Hatchback" hidden="false" id="7c9e-81d4-99fc-7f92" subType="mount">
+      <categoryLinks>
+        <categoryLink targetId="0b3f-1adb-3e32-5083" id="ca31-abeb-8b89-fe57" primary="true" name="Car"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Unarmed" hidden="false" id="82ba-25eb-210c-73aa" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="07cb-b043-0fc2-51a7-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="07cb-b043-0fc2-51a7-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <infoGroups>
+        <infoGroup name="Hatchback" id="3525-6945-b44d-de09" hidden="false">
+          <profiles>
+            <profile name="Hatchback" typeId="0fbb-0f67-42fe-1016" typeName="Car" hidden="false" id="8f58-8d80-a01e-67f4">
+              <characteristics>
+                <characteristic name="Structure" typeId="4368-4ffe-c146-7e53">+2</characteristic>
+                <characteristic name="Capacity" typeId="e5d5-6c09-e3fb-3d46">5</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="9"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Trunk" id="bb6f-22f0-a235-edf6" hidden="false" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ammo Cache" hidden="false" id="b814-3a6c-11c9-9075">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b2f5-5148-1db3-593d" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Ammo Cache" id="caf7-a1c7-4af9-66ee" hidden="false" type="profile" targetId="33e9-ae36-92c9-dae1"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="&quot;Waste Disposal&quot; Van" hidden="false" id="3ecd-8939-520f-f2f7" subType="mount">
+      <categoryLinks>
+        <categoryLink targetId="0b3f-1adb-3e32-5083" id="7fad-cf74-c472-66ee" primary="true" name="Car"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Unarmed" hidden="false" id="1ab7-8ab9-d443-209d" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f3d5-69c4-edff-ba3e-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f3d5-69c4-edff-ba3e-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <infoGroups>
+        <infoGroup name="&quot;Waste Disposal&quot; Van" id="16cb-2ced-fffa-4e8a" hidden="false">
+          <profiles>
+            <profile name="&quot;Waste Disposal&quot; Van" typeId="0fbb-0f67-42fe-1016" typeName="Car" hidden="false" id="29d0-b9a8-15f5-8963">
+              <characteristics>
+                <characteristic name="Structure" typeId="4368-4ffe-c146-7e53">+4</characteristic>
+                <characteristic name="Capacity" typeId="e5d5-6c09-e3fb-3d46">9</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Slow" id="4ca5-44b0-dee1-6385" hidden="false" type="rule" targetId="afd1-4c87-3d3d-512d"/>
+            <infoLink name="Enclosed" id="0082-30f6-286e-46b0" hidden="false" type="rule" targetId="081d-7990-7851-e406"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="15"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Trunk" id="6428-c4eb-3848-5702" hidden="false" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ammo Cache" hidden="false" id="6aa9-f3a6-4614-16cb">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4ba-5bd0-68f4-4c4e" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Ammo Cache" id="ad65-1019-1744-2d73" hidden="false" type="profile" targetId="33e9-ae36-92c9-dae1"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Sports Car" hidden="false" id="48c1-1090-08ca-4d8e" subType="mount">
+      <categoryLinks>
+        <categoryLink targetId="0b3f-1adb-3e32-5083" id="f9da-aa7b-f880-1392" primary="true" name="Car"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Unarmed" hidden="false" id="4dd9-e271-7d73-8868" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8644-8f53-c22c-b721-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8644-8f53-c22c-b721-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <infoGroups>
+        <infoGroup name="Sports Car" id="fe33-abf3-5fe7-66d8" hidden="false">
+          <profiles>
+            <profile name="Sports Car" typeId="0fbb-0f67-42fe-1016" typeName="Car" hidden="false" id="642e-6be3-153c-dcde">
+              <characteristics>
+                <characteristic name="Structure" typeId="4368-4ffe-c146-7e53">+3</characteristic>
+                <characteristic name="Capacity" typeId="e5d5-6c09-e3fb-3d46">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Turbo" id="d733-0052-7775-91d0" hidden="false" type="rule" targetId="687d-f944-f28d-1817"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="10"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Trunk" id="a1e4-1f02-12e3-9467" hidden="false" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ammo Cache" hidden="false" id="b14b-70f1-03c8-9504">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="498d-ebe1-da7d-c329" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Ammo Cache" id="a707-630c-7500-1399" hidden="false" type="profile" targetId="33e9-ae36-92c9-dae1"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Pickup Truck" hidden="false" id="8c10-122f-9c8f-3f3f" subType="mount">
+      <categoryLinks>
+        <categoryLink targetId="0b3f-1adb-3e32-5083" id="b78c-0a14-e81f-bbe2" primary="true" name="Car"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Unarmed" hidden="false" id="e7a6-2529-36e6-4d67" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d43d-02f9-e358-0c48" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7842-b454-a1c6-01ab" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <infoGroups>
+        <infoGroup name="Pickup Truck" id="432f-5b8e-d299-5be0" hidden="false">
+          <profiles>
+            <profile name="Pickup Truck" typeId="0fbb-0f67-42fe-1016" typeName="Car" hidden="false" id="5690-5ecf-0483-50ac">
+              <characteristics>
+                <characteristic name="Structure" typeId="4368-4ffe-c146-7e53">+4</characteristic>
+                <characteristic name="Capacity" typeId="e5d5-6c09-e3fb-3d46">8</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="All-Terrain" id="3588-61c1-919b-8eda" hidden="false" type="rule" targetId="6207-1fad-7576-bc6a"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="18"/>
+      </costs>
+      <comment>Normal version</comment>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Trunk" id="93cd-dd5e-fd63-d2c7" hidden="false" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ammo Cache" hidden="false" id="6411-b7d7-16de-d544">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f201-1526-7894-8e8d" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Ammo Cache" id="e0c0-3475-f7d9-6672" hidden="false" type="profile" targetId="33e9-ae36-92c9-dae1"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Pickup Truck" hidden="false" id="069b-4e24-215e-d2d8" subType="mount">
+      <categoryLinks>
+        <categoryLink targetId="0b3f-1adb-3e32-5083" id="48cb-0e6f-2f8e-4afb" primary="true" name="Car"/>
+      </categoryLinks>
+      <infoGroups>
+        <infoGroup name="Pickup Truck" id="fd8a-c0d8-a79d-2f53" hidden="false">
+          <profiles>
+            <profile name="Pickup Truck" typeId="0fbb-0f67-42fe-1016" typeName="Car" hidden="false" id="d94e-1f8d-0102-cd3e">
+              <characteristics>
+                <characteristic name="Structure" typeId="4368-4ffe-c146-7e53">+4</characteristic>
+                <characteristic name="Capacity" typeId="e5d5-6c09-e3fb-3d46">8</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="All-Terrain" id="7171-cb9d-0555-844f" hidden="false" type="rule" targetId="6207-1fad-7576-bc6a"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="18"/>
+      </costs>
+      <comment>Cartel version</comment>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" id="574e-cfab-b08d-3a33" hidden="false" defaultSelectionEntryId="159f-fa7d-23b2-1bed" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="96ff-fa24-7132-1a0e" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2484-b4ce-d1d4-3e05" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Unarmed" hidden="false" id="e56d-2f2d-9dd6-0d0e" sortIndex="1"/>
+            <selectionEntry type="upgrade" import="true" name="Machine Gun" hidden="false" id="2955-f161-ca8e-4114" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="22"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink name="Armed Car" hidden="false" id="1146-8075-a728-5a4a" targetId="1bdc-c0aa-6a2a-e64c" primary="false"/>
+              </categoryLinks>
+              <infoLinks>
+                <infoLink name="Machine Gun" id="6c03-b96f-4a28-f4b2" hidden="false" type="profile" targetId="6bfa-11a0-690f-8129"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Trunk" id="c6cd-131e-d839-106f" hidden="false" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ammo Cache" hidden="false" id="12a0-2c5a-275b-0bc7">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4463-8654-bdb7-5472" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Ammo Cache" id="8491-46bf-ffd0-90e2" hidden="false" type="profile" targetId="33e9-ae36-92c9-dae1"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedProfiles>
+    <profile name="Ammo Cache" typeId="460e-d6f1-fb38-8723" typeName="Special Gear" hidden="false" id="33e9-ae36-92c9-dae1">
+      <characteristics>
+        <characteristic name="Description" typeId="a686-4c40-87a7-e7f2">If a model has run out of ammo due to a Random Event, they can spend an Action within 2&quot; of a Car with an Ammo Cache&apos;s trunk and continue firing as normal.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Assign designated Driver (max. one per Car)" id="57b4-060d-d6c9-0bda" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Driver" hidden="false" id="8487-eeca-2bf8-3de6">
+          <costs>
+            <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd33-72d4-f0b3-c17e" includeChildSelections="false"/>
+            <constraint type="max" value="0" field="selections" scope="force" shared="true" id="4b2a-46ca-751d-0291" includeChildSelections="true"/>
+          </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="4b2a-46ca-751d-0291">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="force" childId="0b3f-1adb-3e32-5083" shared="true" roundUp="false" includeChildSelections="true" childName="Car"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <infoLinks>
+            <infoLink name="Driver" id="2c2c-2e27-93a8-6f28" hidden="false" type="rule" targetId="9002-de5f-f7f6-e3b5"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+</catalogue>

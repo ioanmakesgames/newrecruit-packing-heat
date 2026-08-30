@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="f8dd-4e1f-31e3-e79c" name="Prohibition - Bootleggers" gameSystemId="sys-b77d-188a-67ba-264e" gameSystemRevision="10" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedRules>
+    <rule name="Insider (Police)" id="ea99-1542-d107-cf32" hidden="false">
+      <description>This model can use the Police&apos;s Jump-Offs as their own.  If you&apos;re not playing against the Police, this model has the Blend In Trait instead (can use Civilians as Jump-Offs).</description>
+    </rule>
+  </sharedRules>
+  <selectionEntries>
+    <selectionEntry type="unit" import="true" name="Boss" hidden="false" id="8e85-3bac-842f-633e">
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="9"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="74eb-7898-1d56-7143" primary="false" name="Squad Member"/>
+        <categoryLink targetId="f87a-95c9-f56c-4afb" id="ba97-d601-33d0-24d5" primary="true" name="Squad Leader"/>
+      </categoryLinks>
+      <infoGroups>
+        <infoGroup name="Boss" id="7624-ac80-befa-81da" hidden="false">
+          <profiles>
+            <profile name="Boss" typeId="04df-5fa9-e39a-f453" typeName="Model" hidden="false" id="920e-a880-353e-9af9">
+              <characteristics>
+                <characteristic name="Guts" typeId="15b8-ab2b-d141-cc00">3</characteristic>
+                <characteristic name="Fight" typeId="cefd-16c0-2007-6682">8</characteristic>
+                <characteristic name="Rank" typeId="ed4c-41eb-3711-b441">3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Command" id="a305-9b35-7485-4170" hidden="false" type="rule" targetId="ad2b-0992-8f47-87c6"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" id="1513-8d08-e142-6285" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Pistol &amp; Brass Knuckle (S. Blunt)" hidden="false" id="b3aa-82a0-9a3a-2999" sortIndex="2">
+              <infoLinks>
+                <infoLink name="Pistol" id="0fba-66ad-5e90-716b" hidden="false" type="profile" targetId="06af-2bab-68b5-d044"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="1"/>
+              </costs>
+              <profiles>
+                <profile name="Brass Knuckle" typeId="2998-c971-9651-028c" typeName="Melee Weapon" hidden="false" id="a3fa-0538-fc2b-0616">
+                  <characteristics>
+                    <characteristic name="Size" typeId="3459-c6d7-7eb8-601c">Small (+2)</characteristic>
+                    <characteristic name="Type" typeId="a97e-faea-6f11-8ced">Blunt</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="SMG" hidden="false" id="87bc-155c-cfcb-ae34" sortIndex="5">
+              <infoLinks>
+                <infoLink name="SMG" id="ad4f-3687-857b-a452" hidden="false" type="profile" targetId="101b-855e-8dc9-58d8"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="4"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="1e8a-11fa-365c-2039" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Pistol" id="5066-4497-7ea8-ea32" hidden="false" type="profile" targetId="06af-2bab-68b5-d044"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rifle" hidden="false" id="793d-44b6-ebdf-28c8" sortIndex="3">
+              <infoLinks>
+                <infoLink name="Rifle" id="dbea-a3c8-0261-6dcb" hidden="false" type="profile" targetId="2234-ed93-5d33-9163"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="1"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="6833-9cb9-5a4b-cede" sortIndex="4">
+              <infoLinks>
+                <infoLink name="Shotgun" id="d3cf-a8e5-b30a-e9a5" hidden="false" type="profile" targetId="e240-2c14-a0c4-059b"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="4"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="97ae-c263-7d8a-68db-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97ae-c263-7d8a-68db-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Assassin" hidden="false" id="a561-4db2-916d-190b">
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="10"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="2df0-7cb4-8534-5fdb" primary="true" name="Squad Member"/>
+      </categoryLinks>
+      <infoGroups>
+        <infoGroup name="Assassin" id="d294-4237-9edb-e8db" hidden="false">
+          <profiles>
+            <profile name="Assassin" typeId="04df-5fa9-e39a-f453" typeName="Model" hidden="false" id="bba7-313f-39d1-7a1d">
+              <characteristics>
+                <characteristic name="Guts" typeId="15b8-ab2b-d141-cc00">2</characteristic>
+                <characteristic name="Fight" typeId="cefd-16c0-2007-6682">10</characteristic>
+                <characteristic name="Rank" typeId="ed4c-41eb-3711-b441">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Fast" id="7f0e-ad81-3f64-0522" hidden="false" type="rule" targetId="adcf-b357-c16f-e6ca"/>
+            <infoLink name="Blend In" id="2afe-1db1-975b-40f5" hidden="false" type="rule" targetId="a816-ed26-7211-1822"/>
+            <infoLink name="Loner" id="f834-b4ec-cf73-5be7" hidden="false" type="rule" targetId="9d71-76fa-8d9f-21f1"/>
+            <infoLink name="Assassin" id="8bed-e135-b00e-6473" hidden="false" type="rule" targetId="48cd-660c-50e0-a016"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="01ec-163d-0687-e940" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Knife (S. Sharp)" hidden="false" id="bf61-ea7d-923b-f33e">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1292-35d0-b3b9-5aa8-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1292-35d0-b3b9-5aa8-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Knife" typeId="2998-c971-9651-028c" typeName="Melee Weapon" hidden="false" id="5167-394e-28e9-3c3a">
+              <characteristics>
+                <characteristic name="Size" typeId="3459-c6d7-7eb8-601c">Small (+2)</characteristic>
+                <characteristic name="Type" typeId="a97e-faea-6f11-8ced">Sharp</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Dirty Cop" hidden="false" id="6b1b-750c-b3fd-9dbf">
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="10"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="1993-dde0-fe30-176b" primary="true" name="Squad Member"/>
+      </categoryLinks>
+      <infoGroups>
+        <infoGroup name="Dirty Cop" id="7585-2e58-ff87-d733" hidden="false">
+          <profiles>
+            <profile name="Dirty Cop" typeId="04df-5fa9-e39a-f453" typeName="Model" hidden="false" id="daef-f4f9-2bfd-9649">
+              <characteristics>
+                <characteristic name="Guts" typeId="15b8-ab2b-d141-cc00">2</characteristic>
+                <characteristic name="Fight" typeId="cefd-16c0-2007-6682">8</characteristic>
+                <characteristic name="Rank" typeId="ed4c-41eb-3711-b441">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Scout" id="0cb9-4cb0-ccf3-3d32" hidden="false" type="rule" targetId="0161-cb0e-9c20-9dc6"/>
+            <infoLink name="Loner" id="0877-4b2b-ab4c-2c35" hidden="false" type="rule" targetId="9d71-76fa-8d9f-21f1"/>
+            <infoLink name="Insider (Police)" id="0e4f-2beb-3a66-a3bc" hidden="false" type="rule" targetId="ea99-1542-d107-cf32"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" id="5f38-150b-325a-f5a5" hidden="false" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Pistol &amp; Baton (S. Blunt)" hidden="false" id="8033-540c-99ba-89ba" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Pistol" id="0e3b-1fea-f8d8-fc93" hidden="false" type="profile" targetId="06af-2bab-68b5-d044"/>
+              </infoLinks>
+              <profiles>
+                <profile name="Baton" typeId="2998-c971-9651-028c" typeName="Melee Weapon" hidden="false" id="0d1d-facd-3679-90b4">
+                  <characteristics>
+                    <characteristic name="Size" typeId="3459-c6d7-7eb8-601c">Small (+2)</characteristic>
+                    <characteristic name="Type" typeId="a97e-faea-6f11-8ced">Blunt</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rifle" hidden="false" id="dcdf-f10c-5905-af35" sortIndex="3">
+              <infoLinks>
+                <infoLink name="Rifle" id="d88d-d2c5-8ce0-0715" hidden="false" type="profile" targetId="2234-ed93-5d33-9163"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="ad2d-79a7-7719-683c" sortIndex="4">
+              <infoLinks>
+                <infoLink name="Shotgun" id="d84d-d41b-cec4-7a96" hidden="false" type="profile" targetId="e240-2c14-a0c4-059b"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="4"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c60-4325-b325-340d" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f7d-3bbf-51db-ea07" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Make this model your Squad&apos;s Leader?" hidden="false" id="acd7-2eac-b0fd-5641" type="selectionEntryGroup" targetId="b421-2c12-2cb8-3136" sortIndex="1"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="f87a-95c9-f56c-4afb" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="1847-75fe-ff08-9014" shared="true" includeChildSelections="true" childName="Squad Leader"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="force" shared="true" id="c83e-3d14-ec02-b3ae" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Goon" hidden="false" id="5696-8ff0-922c-f3ca">
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="4"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="9a3c-1283-0775-9e8b" primary="true" name="Squad Member"/>
+      </categoryLinks>
+      <infoGroups>
+        <infoGroup name="Goon" id="78ae-3853-fec7-c935" hidden="false">
+          <profiles>
+            <profile name="Goon" typeId="04df-5fa9-e39a-f453" typeName="Model" hidden="false" id="7263-1ce6-bed3-8913">
+              <characteristics>
+                <characteristic name="Guts" typeId="15b8-ab2b-d141-cc00">2</characteristic>
+                <characteristic name="Fight" typeId="cefd-16c0-2007-6682">8</characteristic>
+                <characteristic name="Rank" typeId="ed4c-41eb-3711-b441">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" id="2800-f2f8-d775-fc50" hidden="false" sortIndex="2" defaultSelectionEntryId="4e55-9dc3-a6bb-2f25">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="SMG" hidden="false" id="2b60-b3a5-49a4-3a04" sortIndex="6">
+              <infoLinks>
+                <infoLink name="SMG" id="26c4-e569-71f8-215b" hidden="false" type="profile" targetId="101b-855e-8dc9-58d8"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="6"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Knife (S. Sharp)" hidden="false" id="4e55-9dc3-a6bb-2f25" sortIndex="1">
+              <profiles>
+                <profile name="Knife" typeId="2998-c971-9651-028c" typeName="Melee Weapon" hidden="false" id="74ff-8cdc-b2ea-d7e4">
+                  <characteristics>
+                    <characteristic name="Size" typeId="3459-c6d7-7eb8-601c">Small (+2)</characteristic>
+                    <characteristic name="Type" typeId="a97e-faea-6f11-8ced">Sharp</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rifle" hidden="false" id="5ce3-d139-ba4e-7948" sortIndex="4">
+              <infoLinks>
+                <infoLink name="Rifle" id="4668-0dd0-9162-be35" hidden="false" type="profile" targetId="2234-ed93-5d33-9163"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="3"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="948a-c320-118c-a717" sortIndex="5">
+              <infoLinks>
+                <infoLink name="Shotgun" id="d5ba-02d6-0fcf-a469" hidden="false" type="profile" targetId="e240-2c14-a0c4-059b"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="6"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="347a-4682-b445-989e" sortIndex="3">
+              <infoLinks>
+                <infoLink name="Pistol" id="d42e-a8f9-a3d8-b243" hidden="false" type="profile" targetId="06af-2bab-68b5-d044"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Cosh (M. Blunt)" hidden="false" id="0e86-92df-886f-1cbd" sortIndex="2">
+              <profiles>
+                <profile name="Cosh" typeId="2998-c971-9651-028c" typeName="Melee Weapon" hidden="false" id="deec-17f2-3079-e531">
+                  <characteristics>
+                    <characteristic name="Size" typeId="3459-c6d7-7eb8-601c">Medium (+4)</characteristic>
+                    <characteristic name="Type" typeId="a97e-faea-6f11-8ced">Blunt</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="73e5-7dcd-64a7-802b" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1559-0725-fe55-dc69" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Make this model your Squad&apos;s Leader?" hidden="false" id="ce7a-97bd-c60a-b74a" type="selectionEntryGroup" targetId="b421-2c12-2cb8-3136" sortIndex="1"/>
+        <entryLink import="true" name="Up to 2 Goons per Squad can carry a..." hidden="false" id="9d5c-71e8-532b-2111" type="selectionEntryGroup" targetId="820f-5d38-3836-c7e4" sortIndex="3"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="f87a-95c9-f56c-4afb" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="1847-75fe-ff08-9014" shared="true" includeChildSelections="true" childName="Squad Leader"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Triggerman" hidden="false" id="0725-7253-a4d5-688f">
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="10"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="2588-99e5-d6c2-343a" primary="true" name="Squad Member"/>
+      </categoryLinks>
+      <infoGroups>
+        <infoGroup name="Triggerman" id="59aa-2d71-257f-fb0e" hidden="false">
+          <profiles>
+            <profile name="Triggerman" typeId="04df-5fa9-e39a-f453" typeName="Model" hidden="false" id="d83a-0995-f1cf-cee6">
+              <characteristics>
+                <characteristic name="Guts" typeId="15b8-ab2b-d141-cc00">2</characteristic>
+                <characteristic name="Fight" typeId="cefd-16c0-2007-6682">10</characteristic>
+                <characteristic name="Rank" typeId="ed4c-41eb-3711-b441">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Fast" id="a8b3-789d-03af-fd49" hidden="false" type="rule" targetId="adcf-b357-c16f-e6ca"/>
+            <infoLink name="Accurate" id="8171-efeb-530c-13ef" hidden="false" type="rule" targetId="9620-a33d-bdd1-2f60"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" id="a944-6328-09bb-50c8" hidden="false" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="SMG" hidden="false" id="434d-b9e9-9439-3127" sortIndex="5">
+              <infoLinks>
+                <infoLink name="SMG" id="45bd-b031-cc08-8d68" hidden="false" type="profile" targetId="101b-855e-8dc9-58d8"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="4"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="c078-a99a-6c63-9031" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Pistol" id="c4d4-f9be-b55e-1eee" hidden="false" type="profile" targetId="06af-2bab-68b5-d044"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rifle" hidden="false" id="019e-840c-1a9e-18df" sortIndex="3">
+              <infoLinks>
+                <infoLink name="Rifle" id="f32f-e192-f799-0333" hidden="false" type="profile" targetId="2234-ed93-5d33-9163"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="1"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="2e12-dfdb-9918-575b" sortIndex="4">
+              <infoLinks>
+                <infoLink name="Shotgun" id="0960-c46a-ae09-2a26" hidden="false" type="profile" targetId="e240-2c14-a0c4-059b"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="4"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="26e4-16e9-5e05-8746" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="33f8-ffda-3007-ae59" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Make this model your Squad&apos;s Leader?" hidden="false" id="8745-12ff-e87d-d765" type="selectionEntryGroup" targetId="b421-2c12-2cb8-3136" sortIndex="1"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="f87a-95c9-f56c-4afb" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="1847-75fe-ff08-9014" shared="true" includeChildSelections="true" childName="Squad Leader"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="&quot;Supply&quot; Van" hidden="false" id="d42c-02b7-6a0d-1020" subType="mount">
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="12"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Unarmed" hidden="false" id="6270-6b7c-d635-49a8">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8d5e-aa4c-e73c-88b8-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d5e-aa4c-e73c-88b8-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="0b3f-1adb-3e32-5083" id="a3af-ec45-6668-8e5c" primary="true" name="Car"/>
+        <categoryLink targetId="185e-2a88-52c0-c937" id="4483-fde3-2407-5270" primary="false" name="Squad Support"/>
+      </categoryLinks>
+      <infoGroups>
+        <infoGroup name="Supply Van" id="0b9b-0fe7-18a9-62e8" hidden="false">
+          <profiles>
+            <profile name="&quot;Supply&quot; Van" typeId="0fbb-0f67-42fe-1016" typeName="Car" hidden="false" id="0f61-b148-00aa-de64">
+              <characteristics>
+                <characteristic name="Structure" typeId="4368-4ffe-c146-7e53">+3</characteristic>
+                <characteristic name="Capacity" typeId="e5d5-6c09-e3fb-3d46">8</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Slow" id="95ed-e866-6959-01b8" hidden="false" type="rule" targetId="afd1-4c87-3d3d-512d"/>
+            <infoLink name="Enclosed" id="52cf-c4fb-def9-7767" hidden="false" type="rule" targetId="081d-7990-7851-e406"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Passenger Car" hidden="false" id="5f13-a6e7-c3a6-7667" subType="mount">
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="8"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Unarmed" hidden="false" id="8b42-52de-fe92-1d20">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7a9f-6f17-e0f8-8ade-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a9f-6f17-e0f8-8ade-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="0b3f-1adb-3e32-5083" id="e0cc-9594-7f89-0604" primary="true" name="Car"/>
+        <categoryLink targetId="185e-2a88-52c0-c937" id="753b-adeb-f76b-040d" primary="false" name="Squad Support"/>
+      </categoryLinks>
+      <infoGroups>
+        <infoGroup name="Passenger Car" id="af68-6810-add3-6777" hidden="false">
+          <profiles>
+            <profile name="Passenger Car" typeId="0fbb-0f67-42fe-1016" typeName="Car" hidden="false" id="4b9b-b7f4-33a6-6be8">
+              <characteristics>
+                <characteristic name="Structure" typeId="4368-4ffe-c146-7e53">+1</characteristic>
+                <characteristic name="Capacity" typeId="e5d5-6c09-e3fb-3d46">6</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Town Sedan" hidden="false" id="e1bd-1d43-7eba-c69a" subType="mount">
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="8"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Unarmed" hidden="false" id="d6ee-381e-edcd-d3dd">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="84e1-e490-8aea-98fe-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84e1-e490-8aea-98fe-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="0b3f-1adb-3e32-5083" id="6fa6-a3b4-5b60-f8b3" primary="true" name="Car"/>
+        <categoryLink targetId="185e-2a88-52c0-c937" id="d507-d790-b855-3326" primary="false" name="Squad Support"/>
+      </categoryLinks>
+      <infoGroups>
+        <infoGroup name="Town Sedan" id="a36b-f07e-47ee-f9f1" hidden="false">
+          <profiles>
+            <profile name="Town Sedan" typeId="0fbb-0f67-42fe-1016" typeName="Car" hidden="false" id="4204-a3d9-423b-0074">
+              <characteristics>
+                <characteristic name="Structure" typeId="4368-4ffe-c146-7e53">+3</characteristic>
+                <characteristic name="Capacity" typeId="e5d5-6c09-e3fb-3d46">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Up to 2 Goons per Squad can carry a..." id="820f-5d38-3836-c7e4" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Molotov Cocktail" hidden="false" id="3615-b5d8-aa1e-4dec">
+          <costs>
+            <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b5cc-3b17-829d-c1c5" includeChildSelections="false"/>
+            <constraint type="max" value="2" field="selections" scope="force" shared="true" id="cd10-6dd2-af77-90f3" includeChildSelections="true"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Molotov Cocktail" id="fcf4-9d44-6939-33c6" hidden="false" type="profile" targetId="5011-3eb3-0075-ae3e"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <comment>Molotov</comment>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+</catalogue>

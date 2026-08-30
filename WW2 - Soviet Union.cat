@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="fd7c-2c53-9027-7669" name="WW2 - Soviet Union" gameSystemId="sys-b77d-188a-67ba-264e" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="WW2 Shared Data" id="9a09-1160-96b8-8431" targetId="f8b3-af32-e87b-94d1"/>
+  </catalogueLinks>
+  <sharedRules>
+    <rule name="Urah!" id="e724-e5fa-cc82-20a6" hidden="false" publicationId="af58-47f6-82b8-3f00" page="81">
+      <description>When this model is the Active Model in a Group Movement, add an extra 1D6” to all members&apos; Move distance.</description>
+    </rule>
+  </sharedRules>
+  <entryLinks>
+    <entryLink import="true" name="Medic" hidden="false" id="e0ba-da9e-e5a7-bc5a" type="selectionEntry" targetId="54ee-722b-6fa9-76c0"/>
+    <entryLink import="true" name="Sniper" hidden="false" id="060a-6177-3a89-cc3c" type="selectionEntry" targetId="561c-7fbf-118c-97f6"/>
+    <entryLink import="true" name="Off-Table Weapons Team" hidden="false" id="86b3-7503-f211-c3e8" type="selectionEntry" targetId="ce8b-015d-e5ca-da8b"/>
+  </entryLinks>
+  <selectionEntries>
+    <selectionEntry type="unit" import="true" name="Machine Gunner" hidden="false" id="abdb-1d05-ca2b-c4b5">
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="f89c-7ff9-03c7-21f9" primary="true" name="Squad Member"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" id="7091-82c9-d9f3-d940" hidden="false" sortIndex="3">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Armour" hidden="false" id="8edc-2ca6-c072-cbf0">
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="3"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf9b-a7ae-8a74-fe79" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Armour" id="611a-63df-f9da-eb45" hidden="false" type="profile" targetId="20fa-95b9-99ac-30b9"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoGroups>
+        <infoGroup name="Machine Gunner" id="72d4-ad6a-88ed-9792" hidden="false">
+          <profiles>
+            <profile name="Machine Gunner" typeId="04df-5fa9-e39a-f453" typeName="Model" hidden="false" id="d33a-e8ac-e3e1-1402">
+              <characteristics>
+                <characteristic name="Guts" typeId="15b8-ab2b-d141-cc00">2</characteristic>
+                <characteristic name="Fight" typeId="cefd-16c0-2007-6682">8</characteristic>
+                <characteristic name="Rank" typeId="ed4c-41eb-3711-b441">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="17"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Make this model your Squad&apos;s Leader?" hidden="false" id="a3dd-85da-62e6-ccc5" type="selectionEntryGroup" targetId="b421-2c12-2cb8-3136" sortIndex="1"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Machine Gun" hidden="false" id="3ca8-9d70-b24d-4331" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a506-19f7-f742-aef7-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a506-19f7-f742-aef7-max" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Machine Gun" id="a470-2ccd-98c1-5d3b" hidden="false" type="profile" targetId="6bfa-11a0-690f-8129"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <modifiers>
+        <modifier type="set-primary" value="f87a-95c9-f56c-4afb" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="1847-75fe-ff08-9014" shared="true" includeChildSelections="true" childName="Squad Leader"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="7dfe-4cc0-34bb-2810" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Scout Serzhant" hidden="false" id="ed60-0eb1-74d6-7c8f">
+      <categoryLinks>
+        <categoryLink targetId="f87a-95c9-f56c-4afb" id="f6d1-af08-5e3e-a4a2" primary="true" name="Squad Leader"/>
+        <categoryLink targetId="default-category" id="0737-ca6b-52f4-a114" primary="false" name="Squad Member"/>
+      </categoryLinks>
+      <comment>Leader</comment>
+      <infoGroups>
+        <infoGroup name="Scout Serzhant" id="774c-1ac4-66fc-53ad" hidden="false">
+          <infoLinks>
+            <infoLink name="Urah!" id="27db-d156-f393-49b3" hidden="false" type="rule" targetId="e724-e5fa-cc82-20a6"/>
+            <infoLink name="Command" id="979f-d7e5-497f-9446" hidden="false" type="rule" targetId="ad2b-0992-8f47-87c6"/>
+            <infoLink name="Scout" id="8d22-6a90-592e-3661" hidden="false" type="rule" targetId="0161-cb0e-9c20-9dc6"/>
+            <infoLink name="Fast" id="1112-2e06-6e16-f16c" hidden="false" type="rule" targetId="adcf-b357-c16f-e6ca"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Scout Serzhant" typeId="04df-5fa9-e39a-f453" typeName="Model" hidden="false" id="4e40-b31d-8ee4-25d1">
+              <characteristics>
+                <characteristic name="Guts" typeId="15b8-ab2b-d141-cc00">3</characteristic>
+                <characteristic name="Fight" typeId="cefd-16c0-2007-6682">8</characteristic>
+                <characteristic name="Rank" typeId="ed4c-41eb-3711-b441">5</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="20"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="SMG" hidden="false" id="aa57-3c55-50e5-288d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8437-39c3-c796-d29f-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8437-39c3-c796-d29f-max" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="SMG" id="c27d-fa39-0d51-8629" hidden="false" type="profile" targetId="101b-855e-8dc9-58d8"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Serzhant" hidden="false" id="1f89-b20c-3ac4-1e21">
+      <categoryLinks>
+        <categoryLink targetId="f87a-95c9-f56c-4afb" id="cebb-2b0a-b724-d3f1" primary="true" name="Squad Leader"/>
+        <categoryLink targetId="default-category" id="21c0-0c90-fbe7-dc7f" primary="false" name="Squad Member"/>
+      </categoryLinks>
+      <comment>Leader</comment>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" id="54a2-e598-1dbc-cd06" hidden="false" sortIndex="1" defaultSelectionEntryId="f201-6512-0955-09b1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="39e5-0c5e-0cc8-e520" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b4ce-4992-926d-a5cd" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Assault Rifle" hidden="false" id="a83d-8b1f-f0ab-fc74" sortIndex="4">
+              <infoLinks>
+                <infoLink name="Assault Rifle" id="851b-480a-0af7-db14" hidden="false" type="profile" targetId="a58a-d7bd-bda8-89db"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="3"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Pistol &amp; Knife (S. Sharp)" hidden="false" id="51ac-777d-200d-b6ce" sortIndex="1">
+              <profiles>
+                <profile name="Knife" typeId="2998-c971-9651-028c" typeName="Melee Weapon" hidden="false" id="ea08-92d8-6f7f-fc7a">
+                  <characteristics>
+                    <characteristic name="Size" typeId="3459-c6d7-7eb8-601c">Small (+2)</characteristic>
+                    <characteristic name="Type" typeId="a97e-faea-6f11-8ced">Sharp</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Pistol" id="d7f2-62aa-02c9-0e5e" hidden="false" type="profile" targetId="06af-2bab-68b5-d044"/>
+                <infoLink name="Precision" id="5721-7e49-ac3c-6fc8" hidden="false" type="rule" targetId="9ec5-c80d-4ecb-ab9e"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rifle" hidden="false" id="f201-6512-0955-09b1" sortIndex="2">
+              <infoLinks>
+                <infoLink name="Rifle" id="b631-d81b-ccdd-4c3c" hidden="false" type="profile" targetId="2234-ed93-5d33-9163"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="SMG" hidden="false" id="54d3-e0a9-3953-720d" sortIndex="3">
+              <infoLinks>
+                <infoLink name="SMG" id="58c7-c7ab-dbf0-0db2" hidden="false" type="profile" targetId="101b-855e-8dc9-58d8"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="3"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Other Options" id="1147-c304-b96d-912f" hidden="false" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Armour" hidden="false" id="ba21-1a02-61d3-0a60">
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="3"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b51f-33e7-c1c6-173b" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Armour" id="1d71-24ae-3f70-e71e" hidden="false" type="profile" targetId="20fa-95b9-99ac-30b9"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoGroups>
+        <infoGroup name="Serzhant" id="5758-ffca-f022-1b3d" hidden="false">
+          <infoLinks>
+            <infoLink name="Urah!" id="5674-6270-de81-cb22" hidden="false" type="rule" targetId="e724-e5fa-cc82-20a6"/>
+            <infoLink name="Command" id="6409-21fc-9a45-1f4c" hidden="false" type="rule" targetId="ad2b-0992-8f47-87c6"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Serzhant" typeId="04df-5fa9-e39a-f453" typeName="Model" hidden="false" id="9283-57a1-b19f-b940">
+              <characteristics>
+                <characteristic name="Guts" typeId="15b8-ab2b-d141-cc00">3</characteristic>
+                <characteristic name="Fight" typeId="cefd-16c0-2007-6682">8</characteristic>
+                <characteristic name="Rank" typeId="ed4c-41eb-3711-b441">6</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="14"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Assault Engineer" hidden="false" id="eb42-2337-3dd0-26f0">
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="5a0d-13b9-2052-cc42" primary="true" name="Squad Member"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Grenades" id="f831-16db-2dd8-d3c3" hidden="false" sortIndex="4">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Frag Grenade" hidden="false" id="9016-ac73-70fa-6945">
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="89f2-567d-a42c-62e9" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Frag Grenade" id="ab27-73b8-1a7d-4666" hidden="false" type="profile" targetId="fcf1-d029-c596-e785"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Smoke Grenade" hidden="false" id="f158-bc4c-81e7-4478">
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5179-7f8a-17de-67fb" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Smoke Grenade" id="bbcb-aee1-637d-ee77" hidden="false" type="profile" targetId="929a-2d8e-4496-a724"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoGroups>
+        <infoGroup name="Assault Engineer" id="5ae1-eb2a-f21e-cba9" hidden="false">
+          <profiles>
+            <profile name="Assault Engineer" typeId="04df-5fa9-e39a-f453" typeName="Model" hidden="false" id="811e-340b-b47d-bea6">
+              <characteristics>
+                <characteristic name="Guts" typeId="15b8-ab2b-d141-cc00">2</characteristic>
+                <characteristic name="Fight" typeId="cefd-16c0-2007-6682">8</characteristic>
+                <characteristic name="Rank" typeId="ed4c-41eb-3711-b441">3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="14"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Make this model your Squad&apos;s Leader?" hidden="false" id="1752-bc39-088c-05a0" type="selectionEntryGroup" targetId="b421-2c12-2cb8-3136" sortIndex="1"/>
+        <entryLink import="true" name="One Engineer per Squad can become..." hidden="false" id="0102-9d53-a8e6-3295" type="selectionEntryGroup" targetId="5738-de46-e1b1-f64c" sortIndex="5"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="f87a-95c9-f56c-4afb" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="1847-75fe-ff08-9014" shared="true" includeChildSelections="true" childName="Squad Leader"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Armour" hidden="false" id="e51b-8cca-2734-45e4" sortIndex="3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6fb3-5b25-0b94-c77a-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6fb3-5b25-0b94-c77a-max" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Armour" id="d99e-9643-1b37-68a3" hidden="false" type="profile" targetId="20fa-95b9-99ac-30b9"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="SMG" hidden="false" id="49cf-dc14-6acb-f2f5" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6984-c759-4a4e-3489-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6984-c759-4a4e-3489-max" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="SMG" id="dbb6-7b75-5398-6ecf" hidden="false" type="profile" targetId="101b-855e-8dc9-58d8"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Scout" hidden="false" id="0a9a-6d81-0156-fa8f">
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="cc42-58a5-dcd8-ee73" primary="true" name="Squad Member"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" id="2a6e-6991-68ef-417b" hidden="false" sortIndex="2" defaultSelectionEntryId="8a8a-fad5-50ab-e069">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b8f6-b97c-df2b-a0e2" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b52-1f44-4716-cff4" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Rifle" hidden="false" id="5c6c-7518-d805-550b" sortIndex="2">
+              <infoLinks>
+                <infoLink name="Rifle" id="fc1c-8ba2-5bfd-01b4" hidden="false" type="profile" targetId="2234-ed93-5d33-9163"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="SMG" hidden="false" id="d86d-126e-b274-8f83" sortIndex="3">
+              <infoLinks>
+                <infoLink name="SMG" id="99a6-7eec-8bfc-cbdf" hidden="false" type="profile" targetId="101b-855e-8dc9-58d8"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="3"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Grenades" id="37d4-243e-1bb1-9444" hidden="false" sortIndex="3">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Molotov Cocktail" hidden="false" id="bdc5-1f81-1aa1-cc58">
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1864-6c34-9a8c-b48e" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Molotov Cocktail" id="58fd-7797-f7c5-cfcd" hidden="false" type="profile" targetId="5011-3eb3-0075-ae3e"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoGroups>
+        <infoGroup name="Scout" id="e507-5e10-5014-6066" hidden="false">
+          <profiles>
+            <profile name="Scout" typeId="04df-5fa9-e39a-f453" typeName="Model" hidden="false" id="d942-0624-3260-59f9">
+              <characteristics>
+                <characteristic name="Guts" typeId="15b8-ab2b-d141-cc00">2</characteristic>
+                <characteristic name="Fight" typeId="cefd-16c0-2007-6682">8</characteristic>
+                <characteristic name="Rank" typeId="ed4c-41eb-3711-b441">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Scout" id="4410-af64-3acc-04ab" hidden="false" type="rule" targetId="0161-cb0e-9c20-9dc6"/>
+            <infoLink name="Fast" id="d3bf-85b9-cdf8-aa45" hidden="false" type="rule" targetId="adcf-b357-c16f-e6ca"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="10"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Make this model your Squad&apos;s Leader?" hidden="false" id="1de3-862a-9c36-2f48" type="selectionEntryGroup" targetId="b421-2c12-2cb8-3136" sortIndex="1"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="f87a-95c9-f56c-4afb" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="1847-75fe-ff08-9014" shared="true" includeChildSelections="true" childName="Squad Leader"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Comrade" hidden="false" id="edc3-6cf7-8e26-0ace">
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="9505-3ef8-6a5b-f0b1" primary="true" name="Squad Member"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" id="3f1f-e575-4613-b1d0" hidden="false" sortIndex="2" defaultSelectionEntryId="8a8a-fad5-50ab-e069">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f2a8-78cd-bfb9-6806" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d302-346b-e481-eac8" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Assault Rifle" hidden="false" id="6703-9a14-8a68-1421" sortIndex="4">
+              <infoLinks>
+                <infoLink name="Assault Rifle" id="0fc1-3ee0-6501-25d7" hidden="false" type="profile" targetId="a58a-d7bd-bda8-89db"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="3"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rifle" hidden="false" id="2abc-80bc-462d-dc05" sortIndex="2">
+              <infoLinks>
+                <infoLink name="Rifle" id="980e-c417-b4e2-c74e" hidden="false" type="profile" targetId="2234-ed93-5d33-9163"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="SMG" hidden="false" id="27ff-c527-0887-8aad" sortIndex="3">
+              <infoLinks>
+                <infoLink name="SMG" id="a4f8-ef20-9171-8865" hidden="false" type="profile" targetId="101b-855e-8dc9-58d8"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="3"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Grenades" id="a95b-ba30-2760-a096" hidden="false" sortIndex="3">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Molotov Cocktail" hidden="false" id="a335-e543-4824-938b">
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3ef7-a821-862e-cd97" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Molotov Cocktail" id="033c-785d-1cdc-9395" hidden="false" type="profile" targetId="5011-3eb3-0075-ae3e"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoGroups>
+        <infoGroup name="Comrade" id="5294-c288-b9b0-7d68" hidden="false">
+          <profiles>
+            <profile name="Comrade" typeId="04df-5fa9-e39a-f453" typeName="Model" hidden="false" id="cdf4-ac51-5a65-d5ab">
+              <characteristics>
+                <characteristic name="Guts" typeId="15b8-ab2b-d141-cc00">2</characteristic>
+                <characteristic name="Fight" typeId="cefd-16c0-2007-6682">8</characteristic>
+                <characteristic name="Rank" typeId="ed4c-41eb-3711-b441">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="7"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Make this model your Squad&apos;s Leader?" hidden="false" id="f084-7140-987a-51b7" type="selectionEntryGroup" targetId="b421-2c12-2cb8-3136" sortIndex="1"/>
+        <entryLink import="true" name="One Comrade per Squad can become..." hidden="false" id="e1af-ec03-7d31-1137" type="selectionEntryGroup" targetId="87dd-1f94-5384-d59b" sortIndex="4"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="f87a-95c9-f56c-4afb" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="1847-75fe-ff08-9014" shared="true" includeChildSelections="true" childName="Squad Leader"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ognemet" hidden="false" id="183d-17e1-e9e6-7e76">
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="18"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Squad Member" hidden="false" id="da1c-f2d3-b53a-8cb0" targetId="default-category" primary="true"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="cd3a-3096-c1b2-80e5" includeChildSelections="false"/>
+      </constraints>
+      <infoGroups>
+        <infoGroup name="Ognemet" id="cd3c-d1b7-f1e3-d310" hidden="false">
+          <profiles>
+            <profile name="Ognemet" typeId="04df-5fa9-e39a-f453" typeName="Model" hidden="false" id="0edb-e1e7-6a67-7ac4">
+              <characteristics>
+                <characteristic name="Guts" typeId="15b8-ab2b-d141-cc00">2</characteristic>
+                <characteristic name="Fight" typeId="cefd-16c0-2007-6682">6</characteristic>
+                <characteristic name="Rank" typeId="ed4c-41eb-3711-b441">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Flamethrower (3 shots)" hidden="false" id="622b-6021-50cb-e2f8" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="abf7-1759-5afc-3fb3" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9cae-dad4-dd4c-61ea" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Flamethrower (3 shots)" id="daa3-06fa-3b1d-01a8" hidden="false" type="profile" targetId="49ea-b39b-b81d-7ee9"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="4b5c-3255-7fe5-376a" sortIndex="2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f0fb-8bf5-e4f0-bdd8" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3eb1-5583-fde8-2767" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Pistol" id="60ee-d4e9-3eb4-6119" hidden="false" type="profile" targetId="06af-2bab-68b5-d044"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Make this model your Squad&apos;s Leader?" hidden="false" id="c7f5-fb9f-4a75-0f88" type="selectionEntryGroup" targetId="b421-2c12-2cb8-3136" sortIndex="1"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="f87a-95c9-f56c-4afb" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="1847-75fe-ff08-9014" shared="true" includeChildSelections="true" childName="Squad Leader"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="GAZ-67" hidden="false" id="1efd-e6ae-8867-ed7c" subType="mount">
+      <categoryLinks>
+        <categoryLink name="Car" hidden="false" id="e323-9efd-0a7f-36e6" targetId="0b3f-1adb-3e32-5083" primary="true"/>
+        <categoryLink name="Squad Support" hidden="false" id="21ca-c0f6-d2db-e3d9" targetId="185e-2a88-52c0-c937" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="15"/>
+      </costs>
+      <infoGroups>
+        <infoGroup name="GAZ-67" id="0f34-7240-18dd-a46c" hidden="false">
+          <profiles>
+            <profile name="GAZ-67" typeId="0fbb-0f67-42fe-1016" typeName="Car" hidden="false" id="d776-b22d-e0fa-31f1">
+              <characteristics>
+                <characteristic name="Structure" typeId="4368-4ffe-c146-7e53">+4</characteristic>
+                <characteristic name="Capacity" typeId="e5d5-6c09-e3fb-3d46">5</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="All-Terrain" id="af3b-eb41-e3d1-6474" hidden="false" type="rule" targetId="6207-1fad-7576-bc6a"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" id="1cc8-8e60-a029-f7de" hidden="false" defaultSelectionEntryId="159f-fa7d-23b2-1bed">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b2bf-3e9b-864d-22f8" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98eb-1ace-2f8d-4612" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Unarmed" hidden="false" id="fb64-8db5-d417-3c8a" sortIndex="1"/>
+            <selectionEntry type="upgrade" import="true" name="Machine Gun" hidden="false" id="0edb-15ea-07c1-bfa8" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="15"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink name="Armed Car" hidden="false" id="dcd9-b4ef-bc91-3896" targetId="1bdc-c0aa-6a2a-e64c" primary="false"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Red Army Truck" hidden="false" id="c900-736a-410d-48e6" subType="mount">
+      <categoryLinks>
+        <categoryLink name="Car" hidden="false" id="ab06-6edc-ae0b-2ed5" targetId="0b3f-1adb-3e32-5083" primary="true"/>
+        <categoryLink name="Squad Support" hidden="false" id="3ea7-ffc7-499d-da57" targetId="185e-2a88-52c0-c937" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="24"/>
+      </costs>
+      <infoGroups>
+        <infoGroup name="Red Army Truck" id="f5be-5a1b-7c13-f146" hidden="false">
+          <profiles>
+            <profile name="Red Army Truck" typeId="0fbb-0f67-42fe-1016" typeName="Car" hidden="false" id="0f76-8f59-0f31-5e47">
+              <characteristics>
+                <characteristic name="Structure" typeId="4368-4ffe-c146-7e53">+6</characteristic>
+                <characteristic name="Capacity" typeId="e5d5-6c09-e3fb-3d46">10</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="All-Terrain" id="e12c-430b-043d-afc9" hidden="false" type="rule" targetId="6207-1fad-7576-bc6a"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Unarmed" hidden="false" id="950a-3142-b0a6-019d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="914b-e009-87bf-26cc-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="914b-e009-87bf-26cc-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="One Comrade per Squad can become..." id="87dd-1f94-5384-d59b" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Ammo Carrier" hidden="false" id="bca9-610d-b9c6-f7b8">
+          <costs>
+            <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da50-9016-6001-5278" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="cd53-be67-3528-968b" includeChildSelections="true"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Ammo Carrier" id="432d-1d80-59da-de26" hidden="false" type="rule" targetId="a66f-ebf6-49a8-c129"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="One Engineer per Squad can become..." id="5738-de46-e1b1-f64c" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Ammo Carrier" hidden="false" id="a33b-b371-3afc-ec77">
+          <costs>
+            <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9913-a463-fb15-edca" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="force" shared="true" id="c95f-6eef-c5f9-9ca0" includeChildSelections="true"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Ammo Carrier" id="3acf-601f-f0a6-d0d1" hidden="false" type="rule" targetId="a66f-ebf6-49a8-c129"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+</catalogue>

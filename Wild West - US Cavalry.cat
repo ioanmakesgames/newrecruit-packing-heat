@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="9afd-2618-201e-9c1d" name="Wild West - US Cavalry" gameSystemId="sys-b77d-188a-67ba-264e" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" publicationId="63b9-4c6d-eadf-0479" page="1" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedProfiles>
+    <profile name="Bugle" typeId="460e-d6f1-fb38-8723" typeName="Special Gear" hidden="false" id="7eef-9cd1-2143-04bd">
+      <characteristics>
+        <characteristic name="Description" typeId="a686-4c40-87a7-e7f2">While this model is part of a Group Movement, add +2&quot; per D6&quot; to all models&apos; Move distance.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <publications>
+    <publication name="US Cavalry Splat" id="63b9-4c6d-eadf-0479" hidden="false"/>
+  </publications>
+  <selectionEntries>
+    <selectionEntry type="unit" import="true" name="Bugler" hidden="false" id="73b3-e0dd-89b3-6f3d">
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="63da-7d15-89a5-b684" primary="true" name="Squad Member"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="12"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" id="a425-407e-87a5-a703" hidden="false" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Horse, Pistol, &amp; Sword (M. Sharp)" hidden="false" id="1c21-090c-9387-3913" sortIndex="6">
+              <infoLinks>
+                <infoLink name="Pistol" id="f4ea-4153-c79c-c5e7" hidden="false" type="profile" targetId="06af-2bab-68b5-d044"/>
+                <infoLink name="Mounted" id="ceb3-f5d3-b8fb-a4f3" hidden="false" type="rule" targetId="a456-7a3f-40ec-feab"/>
+                <infoLink name="Horse" id="0f97-c4a6-b326-2e90" hidden="false" type="rule" targetId="7036-9cbe-e202-5896"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="7"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink targetId="75b4-df2f-16ee-15bc" id="c1cf-879d-299b-0f07" primary="false" name="Mounted"/>
+              </categoryLinks>
+              <profiles>
+                <profile name="Sword (M. Sharp)" typeId="2998-c971-9651-028c" typeName="Melee Weapon" hidden="false" id="2879-7e5e-96d8-12e6">
+                  <characteristics>
+                    <characteristic name="Size" typeId="3459-c6d7-7eb8-601c">Medium (+4)</characteristic>
+                    <characteristic name="Type" typeId="a97e-faea-6f11-8ced">Sharp</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Horse &amp; Carbine" hidden="false" id="2e5e-3766-9934-90a9" sortIndex="5">
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="6"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Carbine" id="baf9-ca55-c46b-25b9" hidden="false" type="profile" targetId="12a2-f44c-61c0-cff7"/>
+                <infoLink name="Mounted" id="c232-868c-94bc-0142" hidden="false" type="rule" targetId="a456-7a3f-40ec-feab"/>
+                <infoLink name="Horse" id="f1cc-c6db-02f5-eebc" hidden="false" type="rule" targetId="7036-9cbe-e202-5896"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink targetId="75b4-df2f-16ee-15bc" id="d3bd-056d-513b-b906" primary="false" name="Mounted"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="d4a9-2b62-071a-07ff" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Pistol" id="aecb-13e9-cc8d-5c54" hidden="false" type="profile" targetId="06af-2bab-68b5-d044"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Carbine" hidden="false" id="faf8-17cd-629d-d13b" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Carbine" id="31f8-7423-ea8b-9683" hidden="false" type="profile" targetId="12a2-f44c-61c0-cff7"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Pistol &amp; Sword (M. Sharp)" hidden="false" id="13eb-eb3d-b854-a327" sortIndex="3">
+              <infoLinks>
+                <infoLink name="Pistol" id="b0a8-2b56-7ba2-386f" hidden="false" type="profile" targetId="06af-2bab-68b5-d044"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="3"/>
+              </costs>
+              <profiles>
+                <profile name="Sword (M. Sharp)" typeId="2998-c971-9651-028c" typeName="Melee Weapon" hidden="false" id="090e-948e-8af9-c5dc">
+                  <characteristics>
+                    <characteristic name="Size" typeId="3459-c6d7-7eb8-601c">Medium (+4)</characteristic>
+                    <characteristic name="Type" typeId="a97e-faea-6f11-8ced">Sharp</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Horse &amp; Pistol" hidden="false" id="e7fd-75cc-3316-4036" sortIndex="4">
+              <infoLinks>
+                <infoLink name="Pistol" id="b722-3346-6985-e2c7" hidden="false" type="profile" targetId="06af-2bab-68b5-d044"/>
+                <infoLink name="Mounted" id="0ecf-bf18-69fd-801e" hidden="false" type="rule" targetId="a456-7a3f-40ec-feab"/>
+                <infoLink name="Horse" id="60b2-81b3-f60c-bb6e" hidden="false" type="rule" targetId="7036-9cbe-e202-5896"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="4"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink targetId="75b4-df2f-16ee-15bc" id="2d9d-f0e5-9fca-d6eb" primary="false" name="Mounted"/>
+              </categoryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="47e3-bd62-6765-ab90-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="47e3-bd62-6765-ab90-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Bugle" hidden="false" id="19a0-a514-c1a2-79ee" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="41e9-956b-63d8-2c2b-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="41e9-956b-63d8-2c2b-max" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Bugle" id="9902-275b-f5c7-6ef9" hidden="false" type="profile" targetId="7eef-9cd1-2143-04bd"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoGroups>
+        <infoGroup name="Bugler" id="0d3b-9cb4-e2ed-d02b" hidden="false">
+          <infoLinks>
+            <infoLink name="Inspiring" id="0d60-4c23-ec67-024d" hidden="false" type="rule" targetId="faa0-f13e-2b04-6b0e"/>
+            <infoLink name="Packing Heat" id="6c0b-981c-c884-fcf4" hidden="false" type="rule" targetId="4191-4360-3470-8324"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Bugler" typeId="04df-5fa9-e39a-f453" typeName="Model" hidden="false" id="b731-5e4f-6115-28dd">
+              <characteristics>
+                <characteristic name="Guts" typeId="15b8-ab2b-d141-cc00">2</characteristic>
+                <characteristic name="Fight" typeId="cefd-16c0-2007-6682">8</characteristic>
+                <characteristic name="Rank" typeId="ed4c-41eb-3711-b441">4</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="a6b0-001e-dc25-84da" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Cavalryman" hidden="false" id="3a1c-693a-0457-a677">
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="7e5e-ff82-774f-63e9" primary="true" name="Squad Member"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="12"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" id="d8e7-7f6c-b59a-4cd1" hidden="false" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Horse, Pistol, &amp; Sword" hidden="false" id="da12-5dab-4aab-f2b0" sortIndex="3">
+              <infoLinks>
+                <infoLink name="Pistol" id="afd8-3d08-35b8-3b50" hidden="false" type="profile" targetId="06af-2bab-68b5-d044"/>
+                <infoLink name="Mounted" id="22c7-9ebb-3ec5-2961" hidden="false" type="rule" targetId="a456-7a3f-40ec-feab"/>
+                <infoLink name="Horse" id="7b62-6aa0-90f0-f29b" hidden="false" type="rule" targetId="7036-9cbe-e202-5896"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="3"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink targetId="75b4-df2f-16ee-15bc" id="2fb6-16cc-8968-2b27" primary="false" name="Mounted"/>
+              </categoryLinks>
+              <profiles>
+                <profile name="Sword (M. Sharp)" typeId="2998-c971-9651-028c" typeName="Melee Weapon" hidden="false" id="97d5-5061-4ade-6dae">
+                  <characteristics>
+                    <characteristic name="Size" typeId="3459-c6d7-7eb8-601c">Medium (+4)</characteristic>
+                    <characteristic name="Type" typeId="a97e-faea-6f11-8ced">Sharp</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Horse &amp; Carbine" hidden="false" id="62cf-86fa-f0ab-f6a0" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Carbine" id="7542-501e-5b1f-706e" hidden="false" type="profile" targetId="12a2-f44c-61c0-cff7"/>
+                <infoLink name="Mounted" id="d9fc-9205-fa94-77ff" hidden="false" type="rule" targetId="a456-7a3f-40ec-feab"/>
+                <infoLink name="Horse" id="38b8-8da4-bcc8-b7ff" hidden="false" type="rule" targetId="7036-9cbe-e202-5896"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Carbine" hidden="false" id="4a28-a330-709f-fd88" sortIndex="1">
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="0"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Carbine" id="20cf-51ec-d678-bd2e" hidden="false" type="profile" targetId="12a2-f44c-61c0-cff7"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="50f2-32b8-1055-5d75-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50f2-32b8-1055-5d75-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoGroups>
+        <infoGroup name="Cavalryman" id="5858-a98f-a412-6fc3" hidden="false">
+          <infoLinks>
+            <infoLink name="Packing Heat" id="1cd5-945d-879b-5932" hidden="false" type="rule" targetId="4191-4360-3470-8324"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Cavalryman" typeId="04df-5fa9-e39a-f453" typeName="Model" hidden="false" id="f66d-9660-4d3d-6a9c">
+              <characteristics>
+                <characteristic name="Guts" typeId="15b8-ab2b-d141-cc00">2</characteristic>
+                <characteristic name="Fight" typeId="cefd-16c0-2007-6682">8</characteristic>
+                <characteristic name="Rank" typeId="ed4c-41eb-3711-b441">3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="NCO" hidden="false" id="5069-e65b-025c-fc88">
+      <categoryLinks>
+        <categoryLink targetId="f87a-95c9-f56c-4afb" id="006b-71f0-cd64-dfcf" primary="true" name="Squad Leader"/>
+        <categoryLink targetId="default-category" id="ba78-f161-f3c8-bc98" primary="false" name="Squad Member"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="12"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" id="7556-c86a-d948-257a" hidden="false" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Horse, Pistol, &amp; Sword" hidden="false" id="61dd-c540-79b8-1181" sortIndex="3">
+              <infoLinks>
+                <infoLink name="Pistol" id="4714-bc92-9ac3-9e7c" hidden="false" type="profile" targetId="06af-2bab-68b5-d044"/>
+                <infoLink name="Mounted" id="6e19-31e3-b541-64ce" hidden="false" type="rule" targetId="a456-7a3f-40ec-feab"/>
+                <infoLink name="Horse" id="fc14-6596-363d-3cfe" hidden="false" type="rule" targetId="7036-9cbe-e202-5896"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="3"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink targetId="75b4-df2f-16ee-15bc" id="96fb-4682-2493-65e1" primary="false" name="Mounted"/>
+              </categoryLinks>
+              <profiles>
+                <profile name="Sword (M. Sharp)" typeId="2998-c971-9651-028c" typeName="Melee Weapon" hidden="false" id="0830-70cb-ee30-89aa">
+                  <characteristics>
+                    <characteristic name="Size" typeId="3459-c6d7-7eb8-601c">Medium (+4)</characteristic>
+                    <characteristic name="Type" typeId="a97e-faea-6f11-8ced">Sharp</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Horse &amp; Carbine" hidden="false" id="3afa-61ff-49ef-039d" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Carbine" id="2f40-ebb0-9e16-7623" hidden="false" type="profile" targetId="12a2-f44c-61c0-cff7"/>
+                <infoLink name="Mounted" id="6262-ea01-a20f-81ef" hidden="false" type="rule" targetId="a456-7a3f-40ec-feab"/>
+                <infoLink name="Horse" id="0c75-12fc-934e-c560" hidden="false" type="rule" targetId="7036-9cbe-e202-5896"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink targetId="75b4-df2f-16ee-15bc" id="fed0-87d6-55e5-de9d" primary="false" name="Mounted"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Carbine" hidden="false" id="7d2e-f459-5a7e-b7f9" sortIndex="1">
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="0"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Carbine" id="b406-af3d-a3cf-f4df" hidden="false" type="profile" targetId="12a2-f44c-61c0-cff7"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fb47-8a0c-86f9-b418-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fb47-8a0c-86f9-b418-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoGroups>
+        <infoGroup name="NCO" id="7ec6-f4d3-6c50-410b" hidden="false">
+          <infoLinks>
+            <infoLink name="Command" id="4f41-c639-8384-1bda" hidden="false" type="rule" targetId="ad2b-0992-8f47-87c6"/>
+            <infoLink name="Packing Heat" id="29d2-c541-db7f-c124" hidden="false" type="rule" targetId="4191-4360-3470-8324"/>
+          </infoLinks>
+          <profiles>
+            <profile name="NCO" typeId="04df-5fa9-e39a-f453" typeName="Model" hidden="false" id="ca59-ce1d-51bd-fb75">
+              <characteristics>
+                <characteristic name="Guts" typeId="15b8-ab2b-d141-cc00">2</characteristic>
+                <characteristic name="Fight" typeId="cefd-16c0-2007-6682">8</characteristic>
+                <characteristic name="Rank" typeId="ed4c-41eb-3711-b441">4</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <comment>Leader - upgraded Cavalryman</comment>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Officer" hidden="false" id="3a75-af7a-dff9-74c7">
+      <categoryLinks>
+        <categoryLink targetId="f87a-95c9-f56c-4afb" id="2e56-933e-7ffd-befd" primary="true" name="Squad Leader"/>
+        <categoryLink targetId="default-category" id="1733-4fcb-b8ef-eae3" primary="false" name="Squad Member"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="20"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" id="c3ef-1ccf-4c3a-8a7d" hidden="false" sortIndex="2">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Horse &amp; Pistol" hidden="false" id="b5c4-a9e2-fade-747b" sortIndex="3">
+              <infoLinks>
+                <infoLink name="Pistol" id="dbb4-1882-cda7-fd93" hidden="false" type="profile" targetId="06af-2bab-68b5-d044"/>
+                <infoLink name="Mounted" id="6e71-d021-6f54-40d6" hidden="false" type="rule" targetId="a456-7a3f-40ec-feab"/>
+                <infoLink name="Horse" id="84fa-905b-1766-9570" hidden="false" type="rule" targetId="7036-9cbe-e202-5896"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="4"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink targetId="75b4-df2f-16ee-15bc" id="60cb-6e64-304e-7681" primary="false" name="Mounted"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Horse &amp; Carbine" hidden="false" id="df2d-7011-193c-6a21" sortIndex="4">
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="6"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Carbine" id="6ef8-24ec-b9fa-74e7" hidden="false" type="profile" targetId="12a2-f44c-61c0-cff7"/>
+                <infoLink name="Mounted" id="d263-e084-8544-46bf" hidden="false" type="rule" targetId="a456-7a3f-40ec-feab"/>
+                <infoLink name="Horse" id="2ace-d647-36ff-977c" hidden="false" type="rule" targetId="7036-9cbe-e202-5896"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink targetId="75b4-df2f-16ee-15bc" id="780f-183f-4b68-5db6" primary="false" name="Mounted"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Pistol" hidden="false" id="ed23-9456-cbe1-025e" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Pistol" id="1f6a-f354-7498-863a" hidden="false" type="profile" targetId="06af-2bab-68b5-d044"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Carbine" hidden="false" id="5688-d2ef-0bce-db90" sortIndex="2">
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Carbine" id="68e2-95e8-584f-d546" hidden="false" type="profile" targetId="12a2-f44c-61c0-cff7"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6a3f-aef4-f371-7f07-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a3f-aef4-f371-7f07-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Sword (M. Sharp)" hidden="false" id="d8a7-7b3c-2463-ddbc" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f1a2-e36e-5bd7-b178-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f1a2-e36e-5bd7-b178-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Sword (M. Sharp)" typeId="2998-c971-9651-028c" typeName="Melee Weapon" hidden="false" id="3e41-261f-569e-baca">
+              <characteristics>
+                <characteristic name="Size" typeId="3459-c6d7-7eb8-601c">Medium (+4)</characteristic>
+                <characteristic name="Type" typeId="a97e-faea-6f11-8ced">Sharp</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <infoGroups>
+        <infoGroup name="Officer" id="3618-c066-de2b-d606" hidden="false">
+          <infoLinks>
+            <infoLink name="Command" id="b9bb-2115-e0ad-b87d" hidden="false" type="rule" targetId="ad2b-0992-8f47-87c6"/>
+            <infoLink name="Inspiring" id="86c5-d99d-ec47-ebf5" hidden="false" type="rule" targetId="faa0-f13e-2b04-6b0e"/>
+            <infoLink name="Packing Heat" id="9b0e-e7a3-579a-6c5a" hidden="false" type="rule" targetId="4191-4360-3470-8324"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Officer" typeId="04df-5fa9-e39a-f453" typeName="Model" hidden="false" id="44fc-6805-3265-c95c">
+              <characteristics>
+                <characteristic name="Guts" typeId="15b8-ab2b-d141-cc00">4</characteristic>
+                <characteristic name="Fight" typeId="cefd-16c0-2007-6682">8</characteristic>
+                <characteristic name="Rank" typeId="ed4c-41eb-3711-b441">6</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </infoGroup>
+      </infoGroups>
+      <comment>Leader</comment>
+    </selectionEntry>
+  </selectionEntries>
+</catalogue>

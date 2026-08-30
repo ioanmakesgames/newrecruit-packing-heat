@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="cedb-614e-604a-8c9e" name="Wild West - Renegades" gameSystemId="sys-b77d-188a-67ba-264e" gameSystemRevision="10" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedProfiles>
+    <profile name="War Shield" typeId="460e-d6f1-fb38-8723" typeName="Special Gear" hidden="false" id="ae2a-4d19-36e5-76a3">
+      <characteristics>
+        <characteristic name="Description" typeId="a686-4c40-87a7-e7f2">Doesn&apos;t block gunfire, but subtracts 4D6 from opponent&apos;s Melee pool as if you were carrying a Heavy Shield.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <selectionEntries>
+    <selectionEntry type="unit" import="true" name="Chieftain" hidden="false" id="03c2-ddea-b994-733a">
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="5399-027d-3062-0703" primary="false" name="Squad Member"/>
+        <categoryLink targetId="f87a-95c9-f56c-4afb" id="95d7-3165-58be-6a90" primary="true" name="Squad Leader"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="12"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" id="c75a-6036-325e-66a0" hidden="false" sortIndex="2" defaultSelectionEntryId="5532-309c-7316-efab">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Spear (M. Sharp)" hidden="false" id="5532-309c-7316-efab" sortIndex="2">
+              <profiles>
+                <profile name="Spear" typeId="2998-c971-9651-028c" typeName="Melee Weapon" hidden="false" id="9627-459d-1230-861c">
+                  <characteristics>
+                    <characteristic name="Size" typeId="3459-c6d7-7eb8-601c">Medium (+4)</characteristic>
+                    <characteristic name="Type" typeId="a97e-faea-6f11-8ced">Sharp</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="War Shield" hidden="false" id="5f89-d50f-2cd2-45c3" type="selectionEntry" targetId="ab6a-21fe-dea6-b11f"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Horse &amp; Heavy Club (L. Blunt)" hidden="false" id="2eec-9340-e2ca-a5b8" sortIndex="5">
+              <profiles>
+                <profile name="Heavy Club" typeId="2998-c971-9651-028c" typeName="Melee Weapon" hidden="false" id="263e-bee5-0c59-d548">
+                  <characteristics>
+                    <characteristic name="Size" typeId="3459-c6d7-7eb8-601c">Large (+6)</characteristic>
+                    <characteristic name="Type" typeId="a97e-faea-6f11-8ced">Blunt</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="War Shield" hidden="false" id="c954-9dfb-0d19-0ff8" type="selectionEntry" targetId="ab6a-21fe-dea6-b11f"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="4"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Horse" id="003c-5d82-c8fe-de30" hidden="false" type="rule" targetId="7036-9cbe-e202-5896"/>
+                <infoLink name="Mounted" id="7d60-ccc7-079f-2403" hidden="false" type="rule" targetId="a456-7a3f-40ec-feab"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink targetId="75b4-df2f-16ee-15bc" id="f4a1-fe08-2eed-6c6a" primary="false" name="Mounted"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Horse &amp; Pistol" hidden="false" id="9359-9769-1fe6-1c1e" sortIndex="7">
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="5"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Pistol" id="548b-ccb4-fe96-25e4" hidden="false" type="profile" targetId="06af-2bab-68b5-d044"/>
+                <infoLink name="Mounted" id="d3b7-5963-9e7f-5039" hidden="false" type="rule" targetId="a456-7a3f-40ec-feab"/>
+                <infoLink name="Horse" id="15e0-bb27-bf0a-6e2c" hidden="false" type="rule" targetId="7036-9cbe-e202-5896"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink targetId="75b4-df2f-16ee-15bc" id="077a-95bf-21f3-4c40" primary="false" name="Mounted"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Horse &amp; Shotgun" hidden="false" id="6e4f-243d-84ef-a236" sortIndex="10">
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="10"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Shotgun" id="178b-859c-baae-af2a" hidden="false" type="profile" targetId="e240-2c14-a0c4-059b"/>
+                <infoLink name="Mounted" id="8195-7e1f-d15d-8301" hidden="false" type="rule" targetId="a456-7a3f-40ec-feab"/>
+                <infoLink name="Horse" id="d065-e6b1-383a-6fb4" hidden="false" type="rule" targetId="7036-9cbe-e202-5896"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink targetId="75b4-df2f-16ee-15bc" id="4ae4-1ac0-f8c4-f2d6" primary="false" name="Mounted"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Horse &amp; Rifle" hidden="false" id="be50-0fff-0758-7a84" sortIndex="9">
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="6"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Rifle" id="79a4-7392-ce2f-859b" hidden="false" type="profile" targetId="2234-ed93-5d33-9163"/>
+                <infoLink name="Mounted" id="695f-eac6-4471-421b" hidden="false" type="rule" targetId="a456-7a3f-40ec-feab"/>
+                <infoLink name="Horse" id="7215-dfbc-0b1f-c7f6" hidden="false" type="rule" targetId="7036-9cbe-e202-5896"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink targetId="75b4-df2f-16ee-15bc" id="dddf-556b-1430-62ee" primary="false" name="Mounted"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Horse &amp; Spear (M. Sharp)" hidden="false" id="e3b2-dfb3-cc7a-8b10" sortIndex="6">
+              <profiles>
+                <profile name="Spear" typeId="2998-c971-9651-028c" typeName="Melee Weapon" hidden="false" id="d63e-9b56-499d-1055">
+                  <characteristics>
+                    <characteristic name="Size" typeId="3459-c6d7-7eb8-601c">Medium (+4)</characteristic>
+                    <characteristic name="Type" typeId="a97e-faea-6f11-8ced">Sharp</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="War Shield" hidden="false" id="229f-e4d2-700d-d9af" type="selectionEntry" targetId="ab6a-21fe-dea6-b11f"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="4"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Mounted" id="81aa-c99b-7ff8-f458" hidden="false" type="rule" targetId="a456-7a3f-40ec-feab"/>
+                <infoLink name="Horse" id="6497-cf4d-5a8f-6048" hidden="false" type="rule" targetId="7036-9cbe-e202-5896"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink targetId="75b4-df2f-16ee-15bc" id="872e-38b8-2530-71ea" primary="false" name="Mounted"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Heavy Club (L. Blunt)" hidden="false" id="3874-b261-8efe-9c40" sortIndex="1">
+              <profiles>
+                <profile name="Heavy Club" typeId="2998-c971-9651-028c" typeName="Melee Weapon" hidden="false" id="1562-4cfa-5740-a95b">
+                  <characteristics>
+                    <characteristic name="Size" typeId="3459-c6d7-7eb8-601c">Large (+6)</characteristic>
+                    <characteristic name="Type" typeId="a97e-faea-6f11-8ced">Blunt</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="War Shield" hidden="false" id="b400-9ddf-6835-1f97" type="selectionEntry" targetId="ab6a-21fe-dea6-b11f"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Pistol &amp; Tomahawk (S. Sharp)" hidden="false" id="688b-1a5d-ee82-4e2f" sortIndex="3">
+              <profiles>
+                <profile name="Tomahawk" typeId="2998-c971-9651-028c" typeName="Melee Weapon" hidden="false" id="9440-668c-4aab-d075">
+                  <characteristics>
+                    <characteristic name="Size" typeId="3459-c6d7-7eb8-601c">Small (+2)</characteristic>
+                    <characteristic name="Type" typeId="a97e-faea-6f11-8ced">Sharp</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Pistol" id="b50a-9cec-9e0c-8e9d" hidden="false" type="profile" targetId="06af-2bab-68b5-d044"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rifle" hidden="false" id="1b85-85e7-bd8a-72ad" sortIndex="4">
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Rifle" id="b200-c0b3-e479-38ff" hidden="false" type="profile" targetId="2234-ed93-5d33-9163"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="cff2-a937-79a9-16dd" sortIndex="8">
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="5"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Shotgun" id="892a-6e9a-ac19-6775" hidden="false" type="profile" targetId="e240-2c14-a0c4-059b"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b278-78ca-5fec-0d41-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b278-78ca-5fec-0d41-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoGroups>
+        <infoGroup name="Chieftain" id="356b-e5b2-e595-f0f1" hidden="false">
+          <profiles>
+            <profile name="Chieftain" typeId="04df-5fa9-e39a-f453" typeName="Model" hidden="false" id="87fe-3c45-cff1-70a2">
+              <characteristics>
+                <characteristic name="Guts" typeId="15b8-ab2b-d141-cc00">4</characteristic>
+                <characteristic name="Fight" typeId="cefd-16c0-2007-6682">10</characteristic>
+                <characteristic name="Rank" typeId="ed4c-41eb-3711-b441">4</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Scout" id="2ca4-fe32-34d9-6d44" hidden="false" type="rule" targetId="0161-cb0e-9c20-9dc6"/>
+            <infoLink name="Command" id="db0d-6ce6-ebce-a82c" hidden="false" type="rule" targetId="ad2b-0992-8f47-87c6"/>
+            <infoLink name="Fast" id="df7f-c6e1-eeb8-dc12" hidden="false" type="rule" targetId="adcf-b357-c16f-e6ca"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Raider" hidden="false" id="08bf-fe62-1f1e-ef10">
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="c756-5bc9-7756-7fd8" primary="true" name="Squad Member"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="8"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" id="2f07-c1fa-39fa-46e8" hidden="false" sortIndex="2" defaultSelectionEntryId="19e8-018a-256e-48ee">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Horse &amp; Pistol" hidden="false" id="9d88-f252-402f-8406" sortIndex="5">
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="4"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Pistol" id="c75b-8cef-1eb5-b8bc" hidden="false" type="profile" targetId="06af-2bab-68b5-d044"/>
+                <infoLink name="Mounted" id="1d63-4593-2322-331c" hidden="false" type="rule" targetId="a456-7a3f-40ec-feab"/>
+                <infoLink name="Horse" id="bf0e-6c62-ebd7-3b34" hidden="false" type="rule" targetId="7036-9cbe-e202-5896"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink targetId="75b4-df2f-16ee-15bc" id="c92c-8a72-c342-8c90" primary="false" name="Mounted"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Horse &amp; Rifle" hidden="false" id="f1fb-97e1-ce67-5899" sortIndex="6">
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="5"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Rifle" id="a323-9387-2804-d0a9" hidden="false" type="profile" targetId="2234-ed93-5d33-9163"/>
+                <infoLink name="Mounted" id="95f3-97c2-6198-38fa" hidden="false" type="rule" targetId="a456-7a3f-40ec-feab"/>
+                <infoLink name="Horse" id="6e9a-a269-c850-8a38" hidden="false" type="rule" targetId="7036-9cbe-e202-5896"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink targetId="75b4-df2f-16ee-15bc" id="ddb2-4e8f-addf-8c69" primary="false" name="Mounted"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Horse &amp; Spear (M. Sharp)" hidden="false" id="cf0c-faf1-280c-398e" sortIndex="3">
+              <profiles>
+                <profile name="Spear" typeId="2998-c971-9651-028c" typeName="Melee Weapon" hidden="false" id="c1a8-53f4-4ee0-b19f">
+                  <characteristics>
+                    <characteristic name="Size" typeId="3459-c6d7-7eb8-601c">Medium (+4)</characteristic>
+                    <characteristic name="Type" typeId="a97e-faea-6f11-8ced">Sharp</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="3"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Mounted" id="f2a4-657d-b0a2-2b23" hidden="false" type="rule" targetId="a456-7a3f-40ec-feab"/>
+                <infoLink name="Horse" id="33b9-5505-2454-b6f1" hidden="false" type="rule" targetId="7036-9cbe-e202-5896"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink targetId="75b4-df2f-16ee-15bc" id="c04f-d2d0-8498-5b2c" primary="false" name="Mounted"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Pistol &amp; Tomahawk (S. Sharp)" hidden="false" id="19e8-018a-256e-48ee" sortIndex="1">
+              <profiles>
+                <profile name="Tomahawk" typeId="2998-c971-9651-028c" typeName="Melee Weapon" hidden="false" id="29c9-dec4-ac02-8b1a">
+                  <characteristics>
+                    <characteristic name="Size" typeId="3459-c6d7-7eb8-601c">Small (+2)</characteristic>
+                    <characteristic name="Type" typeId="a97e-faea-6f11-8ced">Sharp</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Pistol" id="e560-3fb9-91dc-4ed1" hidden="false" type="profile" targetId="06af-2bab-68b5-d044"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rifle" hidden="false" id="f8d7-f9db-84a5-fbd0" sortIndex="2">
+              <infoLinks>
+                <infoLink name="Rifle" id="7124-1b86-bc3f-0e61" hidden="false" type="profile" targetId="2234-ed93-5d33-9163"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="e9f3-5fae-6eb3-d45c" sortIndex="4">
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="3"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Shotgun" id="3e4b-0e02-c691-5678" hidden="false" type="profile" targetId="e240-2c14-a0c4-059b"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ca45-efc6-2ca0-6582-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ca45-efc6-2ca0-6582-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Make this model your Squad&apos;s Leader?" hidden="false" id="d6c1-a92c-cbd0-27b2" type="selectionEntryGroup" targetId="b421-2c12-2cb8-3136" sortIndex="1"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="f87a-95c9-f56c-4afb" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="1847-75fe-ff08-9014" shared="true" includeChildSelections="true" childName="Squad Leader"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoGroups>
+        <infoGroup name="Raider" id="a3bb-0012-e58e-0327" hidden="false">
+          <profiles>
+            <profile name="Raider" typeId="04df-5fa9-e39a-f453" typeName="Model" hidden="false" id="fa10-1f75-e0bd-cf57">
+              <characteristics>
+                <characteristic name="Guts" typeId="15b8-ab2b-d141-cc00">2</characteristic>
+                <characteristic name="Fight" typeId="cefd-16c0-2007-6682">10</characteristic>
+                <characteristic name="Rank" typeId="ed4c-41eb-3711-b441">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Scout" id="28bc-10d6-ff45-1340" hidden="false" type="rule" targetId="0161-cb0e-9c20-9dc6"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Plains Warrior" hidden="false" id="b2d9-2601-62e8-f592">
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="347b-be88-3898-e10c" primary="true" name="Squad Member"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="6"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Loadout" id="6ba6-a352-2a74-99e0" hidden="false" sortIndex="2" defaultSelectionEntryId="5ae4-5517-9ac1-8b38">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Spear (M. Sharp)" hidden="false" id="5ae4-5517-9ac1-8b38" sortIndex="2">
+              <profiles>
+                <profile name="Spear" typeId="2998-c971-9651-028c" typeName="Melee Weapon" hidden="false" id="ea7f-9415-ff9f-9f03">
+                  <characteristics>
+                    <characteristic name="Size" typeId="3459-c6d7-7eb8-601c">Medium (+4)</characteristic>
+                    <characteristic name="Type" typeId="a97e-faea-6f11-8ced">Sharp</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="War Shield" hidden="false" id="dbe2-3b87-0248-47ce" type="selectionEntry" targetId="df08-ef53-7c1c-8556"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Horse &amp; Heavy Club (L. Blunt)" hidden="false" id="ae47-1ceb-ca04-39ba" sortIndex="5">
+              <profiles>
+                <profile name="Heavy Club" typeId="2998-c971-9651-028c" typeName="Melee Weapon" hidden="false" id="eb42-a626-4957-4aba">
+                  <characteristics>
+                    <characteristic name="Size" typeId="3459-c6d7-7eb8-601c">Large (+6)</characteristic>
+                    <characteristic name="Type" typeId="a97e-faea-6f11-8ced">Blunt</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="War Shield" hidden="false" id="2b3f-a4a9-3de8-caa2" type="selectionEntry" targetId="df08-ef53-7c1c-8556"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="4"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Horse" id="9484-d080-b6d6-1416" hidden="false" type="rule" targetId="7036-9cbe-e202-5896"/>
+                <infoLink name="Mounted" id="9319-4a79-c995-1f59" hidden="false" type="rule" targetId="a456-7a3f-40ec-feab"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink targetId="75b4-df2f-16ee-15bc" id="38f1-6a6e-718b-743b" primary="false" name="Mounted"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Horse &amp; Bow" hidden="false" id="5f5f-6111-d013-d56c" sortIndex="9">
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="5"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Bow" id="0427-b6e8-8e7b-dd7c" hidden="false" type="profile" targetId="7ef5-a61d-05d8-e607"/>
+                <infoLink name="Mounted" id="e918-e6fb-0a9d-1afe" hidden="false" type="rule" targetId="a456-7a3f-40ec-feab"/>
+                <infoLink name="Horse" id="ec4c-2376-901e-579a" hidden="false" type="rule" targetId="7036-9cbe-e202-5896"/>
+                <infoLink name="Accurate" id="47c6-31cc-c227-3ff5" hidden="false" type="rule" targetId="9620-a33d-bdd1-2f60"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink targetId="75b4-df2f-16ee-15bc" id="81a3-38b6-292a-d310" primary="false" name="Mounted"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Horse &amp; Spear (M. Sharp)" hidden="false" id="5528-17f6-0a7e-954f" sortIndex="6">
+              <profiles>
+                <profile name="Spear" typeId="2998-c971-9651-028c" typeName="Melee Weapon" hidden="false" id="a222-a80d-c1b8-176d">
+                  <characteristics>
+                    <characteristic name="Size" typeId="3459-c6d7-7eb8-601c">Medium (+4)</characteristic>
+                    <characteristic name="Type" typeId="a97e-faea-6f11-8ced">Sharp</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="War Shield" hidden="false" id="9bf7-6a5c-4d93-79fd" type="selectionEntry" targetId="df08-ef53-7c1c-8556"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="4"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Mounted" id="51fc-57af-2ab6-093a" hidden="false" type="rule" targetId="a456-7a3f-40ec-feab"/>
+                <infoLink name="Horse" id="2a83-0f1f-13fe-8f8d" hidden="false" type="rule" targetId="7036-9cbe-e202-5896"/>
+              </infoLinks>
+              <categoryLinks>
+                <categoryLink targetId="75b4-df2f-16ee-15bc" id="2515-e404-1214-2c3b" primary="false" name="Mounted"/>
+              </categoryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Heavy Club (L. Blunt)" hidden="false" id="00cd-7fc3-d8ea-e0d4" sortIndex="1">
+              <profiles>
+                <profile name="Heavy Club" typeId="2998-c971-9651-028c" typeName="Melee Weapon" hidden="false" id="e573-4f7a-b4cd-15ee">
+                  <characteristics>
+                    <characteristic name="Size" typeId="3459-c6d7-7eb8-601c">Large (+6)</characteristic>
+                    <characteristic name="Type" typeId="a97e-faea-6f11-8ced">Blunt</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="War Shield" hidden="false" id="e3a1-8e8d-665c-cbbc" type="selectionEntry" targetId="df08-ef53-7c1c-8556"/>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bow" hidden="false" id="a81c-a502-cfa4-a0e5" sortIndex="4">
+              <costs>
+                <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="1"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Bow" id="e639-9f8b-7bcf-9bc5" hidden="false" type="profile" targetId="7ef5-a61d-05d8-e607"/>
+                <infoLink name="Accurate" id="dfbc-562d-d1cd-0f72" hidden="false" type="rule" targetId="9620-a33d-bdd1-2f60"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b10b-59e1-c5e3-48b4-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b10b-59e1-c5e3-48b4-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Make this model your Squad&apos;s Leader?" hidden="false" id="be17-199f-1ed8-97c4" type="selectionEntryGroup" targetId="b421-2c12-2cb8-3136" sortIndex="1"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set-primary" value="f87a-95c9-f56c-4afb" field="category">
+          <conditions>
+            <condition type="atLeast" value="1" field="selections" scope="self" childId="1847-75fe-ff08-9014" shared="true" includeChildSelections="true" childName="Squad Leader"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <infoGroups>
+        <infoGroup name="Plains Warrior" id="c69e-86f0-fd3e-980e" hidden="false">
+          <profiles>
+            <profile name="Plains Warrior" typeId="04df-5fa9-e39a-f453" typeName="Model" hidden="false" id="aeb9-3119-4c87-d4d3">
+              <characteristics>
+                <characteristic name="Guts" typeId="15b8-ab2b-d141-cc00">3</characteristic>
+                <characteristic name="Fight" typeId="cefd-16c0-2007-6682">10</characteristic>
+                <characteristic name="Rank" typeId="ed4c-41eb-3711-b441">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Scout" id="dc82-9294-52e5-f33e" hidden="false" type="rule" targetId="0161-cb0e-9c20-9dc6"/>
+            <infoLink name="Fast" id="d200-549a-0ccd-6f76" hidden="false" type="rule" targetId="adcf-b357-c16f-e6ca"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Silent Walker" hidden="false" id="693f-fNew Entry95b-2046-aefd">
+      <infoGroups>
+        <infoGroup name="Silent Walker" id="ec93-d7cc-8ba1-b82f" hidden="false">
+          <profiles>
+            <profile name="Silent Walker" typeId="04df-5fa9-e39a-f453" typeName="Model" hidden="false" id="cc30-0072-2105-aa8a">
+              <characteristics>
+                <characteristic name="Guts" typeId="15b8-ab2b-d141-cc00">3</characteristic>
+                <characteristic name="Fight" typeId="cefd-16c0-2007-6682">10</characteristic>
+                <characteristic name="Rank" typeId="ed4c-41eb-3711-b441">2</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Loner" id="c7f1-33fe-4a3c-7766" hidden="false" type="rule" targetId="9d71-76fa-8d9f-21f1"/>
+            <infoLink name="Assassin" id="7ad8-2fdf-e9e0-00c9" hidden="false" type="rule" targetId="48cd-660c-50e0-a016"/>
+            <infoLink name="Fast" id="e558-d755-1331-3d91" hidden="false" type="rule" targetId="adcf-b357-c16f-e6ca"/>
+            <infoLink name="Scout" id="ea5a-9e56-210f-6dc1" hidden="false" type="rule" targetId="0161-cb0e-9c20-9dc6"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Tomahawk &amp; Knife (L. Sharp)" hidden="false" id="b646-1e18-4f81-4db3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1557-4144-36a6-67c3-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1557-4144-36a6-67c3-max" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Tomahawk &amp; Knife" typeId="2998-c971-9651-028c" typeName="Melee Weapon" hidden="false" id="0ee5-f403-5885-5f58">
+              <characteristics>
+                <characteristic name="Size" typeId="3459-c6d7-7eb8-601c">Large (+6)</characteristic>
+                <characteristic name="Type" typeId="a97e-faea-6f11-8ced">Sharp</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="10"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="952b-38d2-662e-7c64" includeChildSelections="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="default-category" id="a39f-899f-dd4d-9221" primary="true" name="Squad Member"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Medicine Man" hidden="false" id="c58f-ce87-b098-38e7">
+      <infoGroups>
+        <infoGroup name="Medicine Man" id="0913-8b2a-4734-f6c5" hidden="false">
+          <profiles>
+            <profile name="Medicine Man" typeId="04df-5fa9-e39a-f453" typeName="Model" hidden="false" id="153d-3153-f2e7-9391">
+              <characteristics>
+                <characteristic name="Guts" typeId="15b8-ab2b-d141-cc00">2</characteristic>
+                <characteristic name="Fight" typeId="cefd-16c0-2007-6682">0</characteristic>
+                <characteristic name="Rank" typeId="ed4c-41eb-3711-b441">3</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Pacifist" id="bf9f-bb92-dffa-7e44" hidden="false" type="rule" targetId="5120-0dff-c77d-fdce"/>
+            <infoLink name="Medic" id="b324-a1e4-9532-b23b" hidden="false" type="rule" targetId="32c3-24fc-653c-aa9f"/>
+            <infoLink name="Inspiring" id="0801-dd49-2139-a34a" hidden="false" type="rule" targetId="faa0-f13e-2b04-6b0e"/>
+            <infoLink name="Loner" id="d749-d957-96ba-8f88" hidden="false" type="rule" targetId="9d71-76fa-8d9f-21f1"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Unarmed" hidden="false" id="2966-b786-f295-ea9f">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ec9e-8054-dbe9-8f11-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ec9e-8054-dbe9-8f11-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="10"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="e06b-1145-1b18-3708" includeChildSelections="false"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink targetId="4315-7384-50a6-5cb8" id="5977-b848-3789-b605" primary="true" name="Pacifist"/>
+        <categoryLink targetId="185e-2a88-52c0-c937" id="b29b-8a36-d221-06da" primary="false" name="Squad Support"/>
+      </categoryLinks>
+      <comment>Pacifist</comment>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="War Shield" hidden="false" id="ab6a-21fe-dea6-b11f">
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="3"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="War Shield" id="6c1f-f784-d89a-e84b" hidden="false" type="profile" targetId="ae2a-4d19-36e5-76a3"/>
+      </infoLinks>
+      <comment>Leader variant</comment>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2c9e-7c7d-f916-c6f5" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="War Shield" hidden="false" id="df08-ef53-7c1c-8556">
+      <costs>
+        <cost name="pts" typeId="3edf-fb56-4fe1-3c6c" value="2"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="War Shield" id="ced2-b640-5153-656d" hidden="false" type="profile" targetId="ae2a-4d19-36e5-76a3"/>
+      </infoLinks>
+      <comment>Scrub variant</comment>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="23f3-f837-750a-9609" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>
